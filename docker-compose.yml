@@ -1,0 +1,12 @@
+version: '3.5'
+services:
+  app:
+    stdin_open: true # https://teratail.com/questions/249875
+    build: .
+    environment:
+      - NODE_ENV=production
+    volumes:
+      - ./:/usr/src/app # ローカルとコンテナ内の同期
+    command: sh -c "cd react-app && PORT=3001 yarn start"
+    ports:
+      - "3001:3001"
