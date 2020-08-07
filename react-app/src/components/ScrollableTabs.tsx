@@ -1,8 +1,11 @@
 //　Reactの中に子要素（ReactNode, FC, useState, ChangeEvent）がある？
-import React, { ReactNode, FC, useState, ChangeEvent } from 'react';
+import React, { ReactNode, FC, useState, ChangeEvent, useEffect } from 'react';
 // 　上記のimport Reactとの書き方の違うのはなぜか？
-import {AppBar,Tabs,Tab,Typography,Box} from '@material-ui/core';
+import {AppBar,Tabs,Typography,Box,Tab} from '@material-ui/core';
 import FlipList from './FlipList';
+import TabList from './TabList';
+import { Tab as _Tab } from '../models/tab';
+import { fetchTabs } from '../api/tab';
 
 // メモ
 // State: コンポーネントの状態を管理する　可変　
@@ -36,6 +39,23 @@ const TabPanel:FC<Props>=({children, index, value})=> {
 }
 
 const ScrollableTabs=()=> {
+
+  const [tabs, setTabs] = useState<_Tab[] | undefined>(undefined);
+
+  const fetchTabsReq = async () => {
+    try {
+      const { data } = await fetchTabs();
+      return data;
+    } catch (e) {
+      console.log(e);
+    }
+  };
+
+  useEffect(() => {
+    const data = fetchTabsReq();
+    data.then(tabs => { setTabs(tabs); });
+  }, []);
+
   const [value, setValue] = useState<number>(0);
 
   const handleChange = (event: ChangeEvent<{}>, newValue: number) => {
@@ -53,21 +73,23 @@ const ScrollableTabs=()=> {
           variant="scrollable"
           scrollButtons="auto"
         >
-          {
-            [...new Array(7)].map((v,i)=>(
-              <Tab label={`Item ${i}`}/>
-            ))
+          {tabs ? tabs.map((tab) => (
+              <Tab label={tab.tag}/>
+            )):null
+            // [...new Array(3)].map((v,i)=>(
+            //   <TabList/>
+            // ))
           }
         </Tabs>
       </AppBar>
       <TabPanel value={value} index={0}>
-        Item One
+        <FlipList/>
       </TabPanel>
       <TabPanel value={value} index={1}>
         <FlipList/>
       </TabPanel>
       <TabPanel value={value} index={2}>
-        Item Three
+        <FlipList/>
       </TabPanel>
       <TabPanel value={value} index={3}>
         Item Four

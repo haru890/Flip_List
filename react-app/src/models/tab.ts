@@ -1,9 +1,7 @@
 // interface データ構造（型）を定義　
-export interface Flip {
+export interface Tab {
   id: number;
-  question: string;
-  answer: string;
-  check: boolean;
+  tag: string; // nameに変える
   created_at: string;
   updated_at: string;
 };
