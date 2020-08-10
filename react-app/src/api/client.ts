@@ -5,7 +5,8 @@ import axios, { AxiosInstance, AxiosResponse } from 'axios';
 let client: AxiosInstance;
 
 export default client = axios.create({
-  baseURL: "https://jsondata.okiba.me/v1/json",
+  // baseURL: "https://jsondata.okiba.me/v1/json",
+  baseURL: "http://0.0.0.0:3000",
   headers: { "Content-Type": "application/json", },
 });
 // URL叩いてデータをどう扱うか

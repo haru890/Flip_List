@@ -4,6 +4,7 @@ export interface Flip {
   question: string;
   answer: string;
   check: boolean;
+  remind: boolean;
   created_at: string;
   updated_at: string;
 };

@@ -5,6 +5,7 @@ import { Flip } from '../models/flip';
 import CheckCircleIcon from '@material-ui/icons/CheckCircle';
 import RadioButtonUncheckedIcon from '@material-ui/icons/RadioButtonUnchecked';
 import styled from '@emotion/styled';
+import NotificationsActiveIcon from '@material-ui/icons/NotificationsActive';
 
 
 interface Props {
@@ -20,6 +21,7 @@ const FlipCard:FC<Props> = ({flip}) => {
     <Root>
       {flip.check ? <CheckCircleIcon fontSize="large" color="primary"/> : <RadioButtonUncheckedIcon fontSize="large"/>}
       <Typography variant="h6">{flip.question}</Typography>
+      {flip.remind ? <NotificationsActiveIcon fontSize="large" color="primary"/> : null}
     </Root>
   );
 };
