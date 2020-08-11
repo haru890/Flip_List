@@ -12,11 +12,8 @@ const TitleBar=()=> {
     // relative	：	相対位置指定。親のボックス要素にstaticが設定されている場合、親のボックス要素の左上が基準値となります。
       <AppBar position="static">
         <Toolbar>
-          <IconButton edge="start" color="inherit">
-            <MenuIcon />
-          </IconButton>
           <Typography variant="h6">
-            News
+            Flip Lists
           </Typography>
         </Toolbar>
       </AppBar>

@@ -22,11 +22,8 @@ const TabList = () => {
 
   return (
     <Card>
-      {/* <Typography variant="h6">Tag一覧</Typography> */}
       <Divider />
-      {/* ? 三項演算子 */}
       {tabs ? tabs.map((tab) => (
-        // <Typography variant="h6">{tag}</Typography>
         <Typography variant="h6">{tab.id}{tab.tag}</Typography>
       )):null}
     </Card>

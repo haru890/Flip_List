@@ -23,7 +23,6 @@ const FlipList = () => {
 
   return (
     <Card>
-      <Typography variant="h6">Flip一覧</Typography>
       <Divider />
       {/* ? 三項演算子 */}
       {flips ? flips.map((flip) => (
