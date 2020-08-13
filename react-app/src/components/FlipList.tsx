@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Card, Divider, Typography } from '@material-ui/core';
+import { Card, Divider } from '@material-ui/core';
 import { fetchFlips } from '../api/flip';
 import { Flip } from '../models/flip';
 import FlipCard from './FlipCard';

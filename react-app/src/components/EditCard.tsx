@@ -1,10 +1,8 @@
-import React, { FC } from 'react';
-import { Card, Typography, TextField, Divider, Button } from '@material-ui/core';
-import { Flip } from '../models/flip';
-import CheckCircleIcon from '@material-ui/icons/CheckCircle';
-import RadioButtonUncheckedIcon from '@material-ui/icons/RadioButtonUnchecked';
-import styled from '@emotion/styled';
-import NotificationsActiveIcon from '@material-ui/icons/NotificationsActive';
+import React from 'react';
+import { Card, TextField, Divider, Button } from '@material-ui/core';
+import DeleteIcon from '@material-ui/icons/Delete';
+import SaveIcon from '@material-ui/icons/Save';
+import CancelIcon from '@material-ui/icons/Cancel';
 
 // Propsを受け取る　親からデータをもらって表示する　FC受け取る型：Props
 const EditCard = () => {
@@ -19,20 +17,38 @@ const EditCard = () => {
       <Divider />
       <div>LINE通知</div>
       <Divider />
-      <textarea cols={40} rows={4}></textarea>
+      <textarea cols={80} rows={9} placeholder={"説明を追加"} style={{margin:"10px"}}></textarea>
       <Divider />
-      <Button>キャンセル</Button>
-      <Button>更新</Button>
-      <Divider />
-      <Button>削除</Button>
+      <div>
+        <Button
+          variant="contained"
+          startIcon={<CancelIcon />}
+          style={{margin:'5px',width:"40%"}}
+        >
+          キャンセル
+        </Button>
+        <Button
+          variant="contained"
+          color="secondary"
+          startIcon={<DeleteIcon />}
+          style={{margin:'5px',width:"40%"}}
+        >
+          削除
+        </Button>
+      </div>
+      <div>
+        <Button
+          variant="contained"
+          color="primary"
+          startIcon={<SaveIcon />}
+          style={{margin:'5px',
+          width:'98%'}}
+        >
+          保存
+        </Button>
+      </div>
     </Card>
   );
 };
-
-const Root = styled(Card)({
-  backgroundColor: "#abcdef",
-  padding: "10px",
-  display: "flex",
-});
 
 export default EditCard;

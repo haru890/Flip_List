@@ -64,6 +64,7 @@ const ScrollableTabs=()=> {
           }
         </Tabs>
       </AppBar>
+      <TabList/>
       <TabPanel value={value} index={0}>
         <FlipList/>
       </TabPanel>
