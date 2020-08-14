@@ -6,7 +6,6 @@ import RadioButtonUncheckedIcon from '@material-ui/icons/RadioButtonUnchecked';
 import styled from '@emotion/styled';
 import NotificationsActiveIcon from '@material-ui/icons/NotificationsActive';
 
-
 interface Props {
   flip: Flip;
 }

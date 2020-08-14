@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Card, Divider } from '@material-ui/core';
+import { Card, Typography } from '@material-ui/core';
 import { fetchFlips } from '../api/flip';
 import { Flip } from '../models/flip';
 import FlipCard from './FlipCard';
@@ -23,8 +23,8 @@ const FlipList = () => {
 
   return (
     <Card>
-      <Divider />
-      {/* ? 三項演算子 */}
+      <Typography variant="h6">Flip一覧</Typography>
+      {/* <Divider /> */}
       {flips ? flips.map((flip) => (
         // <Typography variant="h6">{flip}</Typography>
         <FlipCard flip={flip}/>

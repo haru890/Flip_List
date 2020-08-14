@@ -22,7 +22,7 @@ function App() {
 }
 
 const Main = styled(Grid)({
-  backgroundColor: "#defabc",
+  backgroundColor: "#F0F8FF	",
 });
 
 const Aside = styled(Grid)({

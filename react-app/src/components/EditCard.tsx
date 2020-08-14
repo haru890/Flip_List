@@ -3,6 +3,11 @@ import { Card, TextField, Divider, Button } from '@material-ui/core';
 import DeleteIcon from '@material-ui/icons/Delete';
 import SaveIcon from '@material-ui/icons/Save';
 import CancelIcon from '@material-ui/icons/Cancel';
+import MenuItem from '@material-ui/core/MenuItem';
+import Select from '@material-ui/core/Select';
+import FormControl from '@material-ui/core/FormControl';
+import InputLabel from '@material-ui/core/InputLabel';
+
 
 // Propsを受け取る　親からデータをもらって表示する　FC受け取る型：Props
 const EditCard = () => {
@@ -11,19 +16,29 @@ const EditCard = () => {
 
   return (
     <Card>
-      <TextField />
+      <TextField placeholder={" オモテ"} style={{width:"100%"}}/>
       <Divider />
-      <TextField />
+      <TextField placeholder={" ウラ"} style={{width:"100%"}}/>
       <Divider />
-      <div>LINE通知</div>
+      <FormControl>
+        <InputLabel>LINE通知</InputLabel>
+        <Select
+        >
+          <MenuItem value="">
+            <em>通知なし</em>
+          </MenuItem>
+          <MenuItem value={10}>07:00〜</MenuItem>
+          <MenuItem value={20}>08:00〜</MenuItem>
+          <MenuItem value={30}>09:00〜</MenuItem>
+        </Select>
+      </FormControl>
       <Divider />
-      <textarea cols={80} rows={9} placeholder={"説明を追加"} style={{margin:"10px"}}></textarea>
+      <textarea cols={80} rows={9} placeholder={" メモ"} style={{margin:"10px"}}></textarea>
       <Divider />
-      <div>
         <Button
           variant="contained"
           startIcon={<CancelIcon />}
-          style={{margin:'5px',width:"40%"}}
+          style={{margin:'5px 15px 5px 15px',width:"45%"}}
         >
           キャンセル
         </Button>
@@ -31,11 +46,10 @@ const EditCard = () => {
           variant="contained"
           color="secondary"
           startIcon={<DeleteIcon />}
-          style={{margin:'5px',width:"40%"}}
+          style={{margin:'5px 15px 5px 15px',width:"45%"}}
         >
           削除
         </Button>
-      </div>
       <div>
         <Button
           variant="contained"
