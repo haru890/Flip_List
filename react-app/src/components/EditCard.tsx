@@ -12,6 +12,14 @@ import InputLabel from '@material-ui/core/InputLabel';
 // Propsを受け取る　親からデータをもらって表示する　FC受け取る型：Props
 const EditCard = () => {
 
+  // 削除ボタン押下時のモーダル表示
+  class Lesson extends React.Component {
+    constructor(props: boolean) {
+      super(props);
+      this.state = {isModalOpen: false};
+    }
+  }
+
   // FlipListが親　データを取る必要がない
 
   return (
@@ -33,7 +41,7 @@ const EditCard = () => {
         </Select>
       </FormControl>
       <Divider />
-      <textarea cols={80} rows={9} placeholder={" メモ"} style={{margin:"10px"}}></textarea>
+      <textarea cols={80} rows={9} placeholder={"メモ"} style={{margin:"10px"}}></textarea>
       <Divider />
         <Button
           variant="contained"

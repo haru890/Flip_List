@@ -26,8 +26,10 @@ const FlipList = () => {
       <Typography variant="h6">Flip一覧</Typography>
       {/* <Divider /> */}
       {flips ? flips.map((flip) => (
-        // <Typography variant="h6">{flip}</Typography>
-        <FlipCard flip={flip}/>
+        <>
+          <Typography variant="h6">{flip}</Typography>
+          <FlipCard flip={flip}/>
+        </>
       )):null}
     </Card>
   );
