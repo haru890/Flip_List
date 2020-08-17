@@ -7,7 +7,7 @@ import MenuItem from '@material-ui/core/MenuItem';
 import Select from '@material-ui/core/Select';
 import FormControl from '@material-ui/core/FormControl';
 import InputLabel from '@material-ui/core/InputLabel';
-
+import SystemUpdateAltIcon from '@material-ui/icons/SystemUpdateAlt';
 
 // Propsを受け取る　親からデータをもらって表示する　FC受け取る型：Props
 const EditCard = () => {
@@ -42,7 +42,7 @@ const EditCard = () => {
           </Select>
         </FormControl>
         <Divider />
-        <textarea cols={80} rows={9} placeholder={"メモ"} style={{margin:"10px"}}></textarea>
+        <textarea cols={80} rows={9} placeholder={" メモ"} style={{margin:"10px"}}></textarea>
         <Divider />
           <Button
             variant="contained"
@@ -70,6 +70,18 @@ const EditCard = () => {
             width:'98%'}}
           >
             保存
+          </Button>
+        </div>
+        <div>
+          <Button
+            type='submit'
+            variant="contained"
+            color="primary"
+            startIcon={<SystemUpdateAlt />}
+            style={{margin:'5px',
+            width:'98%'}}
+          >
+            登録
           </Button>
         </div>
       </Card>
