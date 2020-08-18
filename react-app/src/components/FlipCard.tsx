@@ -20,6 +20,7 @@ const FlipCard:FC<Props> = ({flip}) => {
       {flip.check ? <CheckCircleIcon fontSize="large" color="primary"/> : <RadioButtonUncheckedIcon fontSize="large"/>}
       <Typography variant="h6">{flip.question}</Typography>
       {flip.remind ? <NotificationsActiveIcon fontSize="large" color="primary"/> : null}
+      <NotificationsActiveIcon fontSize="large" color="primary"/>
     </Root>
   );
 };

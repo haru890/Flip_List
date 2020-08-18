@@ -77,7 +77,7 @@ const EditCard = () => {
             type='submit'
             variant="contained"
             color="primary"
-            startIcon={<SystemUpdateAlt />}
+            startIcon={<SystemUpdateAltIcon />}
             style={{margin:'5px',
             width:'98%'}}
           >
