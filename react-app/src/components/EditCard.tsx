@@ -79,7 +79,6 @@ const EditCard = () => {
           </div>
         </Card>
       </form>
-      <Typography variant="h6">Flip一覧</Typography>
     </div>
   );
 };

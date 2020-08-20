@@ -1,9 +1,10 @@
 import React, { ReactNode, FC, useState, ChangeEvent, useEffect } from 'react';
-import {AppBar,Tabs,Typography,Box,Tab} from '@material-ui/core';
+import {Card, AppBar, Tabs, Typography, Box, Tab} from '@material-ui/core';
 import FlipList from './FlipList';
 import TabList from './TabList';
 import { Tab as _Tab } from '../models/tab';
 import { fetchTabs } from '../api/tab';
+import CreateIcon from '@material-ui/icons/Create';
 
 interface Props {
   children?: ReactNode;
@@ -86,6 +87,15 @@ const ScrollableTabs=()=> {
       <TabPanel value={value} index={6}>
         Item Seven
       </TabPanel>
+      <Card>
+      フリップ１<CreateIcon></CreateIcon>
+      </Card>
+      <Card>
+      フリップ２<CreateIcon></CreateIcon>
+      </Card>
+      <Card>
+      フリップ３<CreateIcon></CreateIcon>
+      </Card>
     </div>
   );
 }
