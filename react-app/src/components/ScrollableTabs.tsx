@@ -1,5 +1,5 @@
 import React, { ReactNode, FC, useState, ChangeEvent, useEffect } from 'react';
-import {Card, AppBar, Tabs, Typography, Box, Tab} from '@material-ui/core';
+import {Card, AppBar, Tabs, Typography, Box, Tab, CardContent} from '@material-ui/core';
 import FlipList from './FlipList';
 import TabList from './TabList';
 import { Tab as _Tab } from '../models/tab';
@@ -87,15 +87,15 @@ const ScrollableTabs=()=> {
       <TabPanel value={value} index={6}>
         Item Seven
       </TabPanel>
-      <Card>
-      フリップ１<CreateIcon></CreateIcon>
-      </Card>
-      <Card>
-      フリップ２<CreateIcon></CreateIcon>
-      </Card>
-      <Card>
-      フリップ３<CreateIcon></CreateIcon>
-      </Card>
+        <Card>
+          <CardContent>フリップ1<CreateIcon></CreateIcon></CardContent>
+        </Card>
+        <Card>
+          <CardContent>フリップ2<CreateIcon></CreateIcon></CardContent>
+        </Card>
+        <Card>
+          <CardContent>フリップ3<CreateIcon></CreateIcon></CardContent>
+        </Card>
     </div>
   );
 }

@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Card, Typography } from '@material-ui/core';
+import { Card, CardContent, Typography } from '@material-ui/core';
 import { fetchFlips } from '../api/flip';
 import { Flip } from '../models/flip';
 import FlipCard from './FlipCard';
@@ -23,14 +23,16 @@ const FlipList = () => {
 
   return (
     <Card>
-      <Typography variant="h6">Flip一覧</Typography>
-      {/* <Divider /> */}
-      {flips ? flips.map((flip) => (
-        <>
-          <Typography variant="h6">{flip}</Typography>
-          <FlipCard flip={flip}/>
-        </>
-      )):null}
+      <CardContent>
+        <Typography variant="h6">Flip一覧</Typography>
+        {/* <Divider /> */}
+        {flips ? flips.map((flip) => (
+          <>
+            <Typography variant="h6">{flip}</Typography>
+            <FlipCard flip={flip}/>
+          </>
+        )):null}
+      </CardContent>
     </Card>
   );
 };

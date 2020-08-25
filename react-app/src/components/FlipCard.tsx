@@ -1,5 +1,5 @@
 import React, { FC } from 'react';
-import { Card, Typography } from '@material-ui/core';
+import { Card, CardContent, Typography } from '@material-ui/core';
 import { Flip } from '../models/flip';
 import CheckCircleIcon from '@material-ui/icons/CheckCircle';
 import RadioButtonUncheckedIcon from '@material-ui/icons/RadioButtonUnchecked';
@@ -17,10 +17,12 @@ const FlipCard:FC<Props> = ({flip}) => {
 
   return (
     <Root>
-      {flip.check ? <CheckCircleIcon fontSize="large" color="primary"/> : <RadioButtonUncheckedIcon fontSize="large"/>}
-      <Typography variant="h6">{flip.question}</Typography>
-      {flip.remind ? <NotificationsActiveIcon fontSize="large" color="primary"/> : null}
-      <NotificationsActiveIcon fontSize="large" color="primary"/>
+      <CardContent>
+        {flip.check ? <CheckCircleIcon fontSize="large" color="primary"/> : <RadioButtonUncheckedIcon fontSize="large"/>}
+        <Typography variant="h6">{flip.question}</Typography>
+        {flip.remind ? <NotificationsActiveIcon fontSize="large" color="primary"/> : null}
+        <NotificationsActiveIcon fontSize="large" color="primary"/>
+      </CardContent>
     </Root>
   );
 };
