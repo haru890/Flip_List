@@ -38,7 +38,7 @@ const EditCard = () => {
           <textarea cols={80} rows={9} placeholder={" メモ"} style={{margin:"10px"}}></textarea>
           <Divider />
             <Button
-              variant="contained"
+              variant="outlined"
               startIcon={<CancelIcon />}
               style={{margin:'5px 15px 5px 15px',width:"45%"}}
             >
@@ -46,7 +46,7 @@ const EditCard = () => {
             </Button>
             <Button
               type='submit'
-              variant="contained"
+              variant="outlined"
               color="secondary"
               startIcon={<DeleteIcon />}
               style={{margin:'5px 15px 5px 15px',width:"45%"}}
@@ -56,7 +56,7 @@ const EditCard = () => {
           <div>
             <Button
               type='submit'
-              variant="contained"
+              variant="outlined"
               color="primary"
               startIcon={<SaveIcon />}
               style={{margin:'5px',
@@ -68,7 +68,7 @@ const EditCard = () => {
           <div>
             <Button
               type='submit'
-              variant="contained"
+              variant="outlined"
               color="primary"
               startIcon={<SystemUpdateAltIcon />}
               style={{margin:'5px',

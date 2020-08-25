@@ -24,8 +24,6 @@ const FlipList = () => {
   return (
     <Card>
       <CardContent>
-        <Typography variant="h6">Flip一覧</Typography>
-        {/* <Divider /> */}
         {flips ? flips.map((flip) => (
           <>
             <Typography variant="h6">{flip}</Typography>

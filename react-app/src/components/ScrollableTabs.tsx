@@ -65,7 +65,7 @@ const ScrollableTabs=()=> {
           }
         </Tabs>
       </AppBar>
-      <TabList/>
+      {/* <TabList/>
       <TabPanel value={value} index={0}>
         <FlipList/>
       </TabPanel>
@@ -86,7 +86,7 @@ const ScrollableTabs=()=> {
       </TabPanel>
       <TabPanel value={value} index={6}>
         Item Seven
-      </TabPanel>
+      </TabPanel> */}
         <Card>
           <CardContent>フリップ1<CreateIcon></CreateIcon></CardContent>
         </Card>
@@ -95,6 +95,15 @@ const ScrollableTabs=()=> {
         </Card>
         <Card>
           <CardContent>フリップ3<CreateIcon></CreateIcon></CardContent>
+        </Card>
+        <Card>
+          <CardContent>フリップ4<CreateIcon></CreateIcon></CardContent>
+        </Card>
+        <Card>
+          <CardContent>フリップ5<CreateIcon></CreateIcon></CardContent>
+        </Card>
+        <Card>
+          <CardContent>フリップ6<CreateIcon></CreateIcon></CardContent>
         </Card>
     </div>
   );
