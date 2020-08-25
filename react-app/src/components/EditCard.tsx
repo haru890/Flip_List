@@ -1,5 +1,5 @@
 import React from 'react';
-import { Card, TextField, Divider, Button } from '@material-ui/core';
+import { Card, TextField, Divider, Button, IconButton, Tooltip } from '@material-ui/core';
 import DeleteIcon from '@material-ui/icons/Delete';
 import SaveIcon from '@material-ui/icons/Save';
 import CancelIcon from '@material-ui/icons/Cancel';
@@ -48,9 +48,13 @@ const EditCard = () => {
               type='submit'
               variant="outlined"
               color="secondary"
-              startIcon={<DeleteIcon />}
               style={{margin:'5px 15px 5px 15px',width:"45%"}}
             >
+              <Tooltip title="Delete">
+                <IconButton aria-label="delete">
+                  <DeleteIcon />
+                </IconButton>
+              </Tooltip>
               削除
             </Button>
           <div>
