@@ -8,6 +8,7 @@ import Select from '@material-ui/core/Select';
 import FormControl from '@material-ui/core/FormControl';
 import InputLabel from '@material-ui/core/InputLabel';
 import SystemUpdateAltIcon from '@material-ui/icons/SystemUpdateAlt';
+import MuiAlert, { AlertProps } from '@material-ui/lab/Alert';
 
 // Propsを受け取る　親からデータをもらって表示する　FC受け取る型：Props
 const EditCard = () => {
