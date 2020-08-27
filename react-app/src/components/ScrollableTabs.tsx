@@ -1,5 +1,5 @@
 import React, { ReactNode, FC, useState, ChangeEvent, useEffect } from 'react';
-import {Card, AppBar, Tabs, Typography, Box, Tab, CardContent} from '@material-ui/core';
+import {Card, AppBar, Tabs, Typography, Box, Tab, CardContent, styled} from '@material-ui/core';
 import FlipList from './FlipList';
 import TabList from './TabList';
 import { Tab as _Tab } from '../models/tab';
@@ -106,26 +106,50 @@ const ScrollableTabs=()=> {
       <TabPanel value={value} index={6}>
         Item Seven
       </TabPanel> */}
+    <Root>
+      <Border>
         <Card>
           <CardContent>フリップ1<CreateIcon></CreateIcon></CardContent>
         </Card>
+      </Border>
+      <Border>
         <Card>
           <CardContent>フリップ2<CreateIcon></CreateIcon></CardContent>
         </Card>
+      </Border>
+      <Border>
         <Card>
           <CardContent>フリップ3<CreateIcon></CreateIcon></CardContent>
         </Card>
+      </Border>
+      <Border>
         <Card>
           <CardContent>フリップ4<CreateIcon></CreateIcon></CardContent>
         </Card>
+        </Border>
+      <Border>
         <Card>
           <CardContent>フリップ5<CreateIcon></CreateIcon></CardContent>
         </Card>
+      </Border>
+      <Border>
         <Card>
           <CardContent>フリップ6<CreateIcon></CreateIcon></CardContent>
         </Card>
+      </Border>
+    </Root>
+    
     </div>
   );
 }
+
+const Root = styled(Card)({
+  backgroundColor: "#e1f5fe",
+});
+
+const Border = styled(Card)({
+  borderCollapse: "collapse",
+  border: "1px solid #cfd8dc",
+});
 
 export default ScrollableTabs;
