@@ -73,13 +73,15 @@ const ScrollableTabs=()=> {
           scrollButtons="auto"
           aria-label="scrollable auto tabs example"
         >
-          <Tab label="Item One" />
-          <Tab label="Item Two" />
-          <Tab label="Item Three" />
-          <Tab label="Item Four" />
-          <Tab label="Item Five" />
-          <Tab label="Item Six" />
-          <Tab label="Item Seven" />
+          <Tab label="8/27 木" />
+          <Tab label="8/28 金" />
+          <Tab label="メモ" />
+          <Tab label="勉強" />
+          <Tab label="就活" />
+          <Tab label="仕事" />
+          <Tab label="日記" />
+          <Tab label="健康" />
+          <Tab label="家計簿" />
         </Tabs>
       </AppBar>
       {/* <TabList/>
