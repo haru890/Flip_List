@@ -109,32 +109,32 @@ const ScrollableTabs=()=> {
     <Root>
       <Border>
         <Card>
-          <CardContent>フリップ1<CreateIcon></CreateIcon></CardContent>
+          <CardContent style={{padding:"10px"}}>フリップ1<CreateIcon></CreateIcon></CardContent>
         </Card>
       </Border>
       <Border>
         <Card>
-          <CardContent>フリップ2<CreateIcon></CreateIcon></CardContent>
+          <CardContent style={{padding:"10px"}}>フリップ2<CreateIcon></CreateIcon></CardContent>
         </Card>
       </Border>
       <Border>
         <Card>
-          <CardContent>フリップ3<CreateIcon></CreateIcon></CardContent>
+          <CardContent style={{padding:"10px"}}>フリップ3<CreateIcon></CreateIcon></CardContent>
         </Card>
       </Border>
       <Border>
         <Card>
-          <CardContent>フリップ4<CreateIcon></CreateIcon></CardContent>
+          <CardContent style={{padding:"10px"}}>フリップ4<CreateIcon></CreateIcon></CardContent>
         </Card>
         </Border>
       <Border>
         <Card>
-          <CardContent>フリップ5<CreateIcon></CreateIcon></CardContent>
+          <CardContent style={{padding:"10px"}}>フリップ5<CreateIcon></CreateIcon></CardContent>
         </Card>
       </Border>
       <Border>
         <Card>
-          <CardContent>フリップ6<CreateIcon></CreateIcon></CardContent>
+          <CardContent style={{padding:"10px"}}>フリップ6<CreateIcon></CreateIcon></CardContent>
         </Card>
       </Border>
     </Root>
