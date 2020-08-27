@@ -51,7 +51,7 @@ const ScrollableTabs=()=> {
   return (
     <div>
       <AppBar position="static" color="default">
-        <Tabs
+        {/* <Tabs
           value={value}
           onChange={handleChange}
           indicatorColor="primary"
@@ -63,6 +63,23 @@ const ScrollableTabs=()=> {
               <Tab label={tab.tag}/>
             )):null
           }
+        </Tabs> */}
+        <Tabs
+          value={value}
+          onChange={handleChange}
+          indicatorColor="primary"
+          textColor="primary"
+          variant="scrollable"
+          scrollButtons="auto"
+          aria-label="scrollable auto tabs example"
+        >
+          <Tab label="Item One" />
+          <Tab label="Item Two" />
+          <Tab label="Item Three" />
+          <Tab label="Item Four" />
+          <Tab label="Item Five" />
+          <Tab label="Item Six" />
+          <Tab label="Item Seven" />
         </Tabs>
       </AppBar>
       {/* <TabList/>

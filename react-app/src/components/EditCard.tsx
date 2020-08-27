@@ -9,6 +9,7 @@ import FormControl from '@material-ui/core/FormControl';
 import InputLabel from '@material-ui/core/InputLabel';
 import SystemUpdateAltIcon from '@material-ui/icons/SystemUpdateAlt';
 import MuiAlert, { AlertProps } from '@material-ui/lab/Alert';
+import Alert from '@material-ui/lab/Alert';
 
 // Propsを受け取る　親からデータをもらって表示する　FC受け取る型：Props
 const EditCard = () => {
@@ -84,6 +85,11 @@ const EditCard = () => {
           </div>
         </Card>
       </form>
+
+      <Alert severity="error">This is an error message!</Alert>
+      <Alert severity="warning">This is a warning message!</Alert>
+      <Alert severity="info">This is an information message!</Alert>
+      <Alert severity="success">This is a success message!</Alert>
     </div>
   );
 };
