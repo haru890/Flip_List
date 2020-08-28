@@ -5,6 +5,8 @@ import TabList from './TabList';
 import { Tab as _Tab } from '../models/tab';
 import { fetchTabs } from '../api/tab';
 import CreateIcon from '@material-ui/icons/Create';
+import RadioButtonUncheckedIcon from '@material-ui/icons/RadioButtonUnchecked';
+import CheckCircleIcon from '@material-ui/icons/CheckCircle';
 
 interface Props {
   children?: ReactNode;
@@ -109,32 +111,32 @@ const ScrollableTabs=()=> {
     <Root>
       <Border>
         <Card>
-          <CardContent style={{padding:"10px"}}>フリップ1<CreateIcon></CreateIcon></CardContent>
+          <CardContent style={{padding:"10px"}}><CheckCircleIcon color="primary"></CheckCircleIcon>フリップ1<CreateIcon></CreateIcon></CardContent>
         </Card>
       </Border>
       <Border>
         <Card>
-          <CardContent style={{padding:"10px"}}>フリップ2<CreateIcon></CreateIcon></CardContent>
+        <CardContent style={{padding:"10px"}}><CheckCircleIcon color="primary"></CheckCircleIcon>フリップ2<CreateIcon></CreateIcon></CardContent>
         </Card>
       </Border>
       <Border>
         <Card>
-          <CardContent style={{padding:"10px"}}>フリップ3<CreateIcon></CreateIcon></CardContent>
+          <CardContent style={{padding:"10px"}}><CheckCircleIcon color="primary"></CheckCircleIcon>フリップ3<CreateIcon></CreateIcon></CardContent>
         </Card>
       </Border>
       <Border>
         <Card>
-          <CardContent style={{padding:"10px"}}>フリップ4<CreateIcon></CreateIcon></CardContent>
+          <CardContent style={{padding:"10px"}}><RadioButtonUncheckedIcon color="primary"></RadioButtonUncheckedIcon>フリップ4<CreateIcon></CreateIcon></CardContent>
         </Card>
         </Border>
       <Border>
         <Card>
-          <CardContent style={{padding:"10px"}}>フリップ5<CreateIcon></CreateIcon></CardContent>
+          <CardContent style={{padding:"10px"}}><RadioButtonUncheckedIcon color="primary"></RadioButtonUncheckedIcon>フリップ5<CreateIcon></CreateIcon></CardContent>
         </Card>
       </Border>
       <Border>
         <Card>
-          <CardContent style={{padding:"10px"}}>フリップ6<CreateIcon></CreateIcon></CardContent>
+          <CardContent style={{padding:"10px"}}><RadioButtonUncheckedIcon color="primary"></RadioButtonUncheckedIcon>フリップ6<CreateIcon></CreateIcon></CardContent>
         </Card>
       </Border>
     </Root>
