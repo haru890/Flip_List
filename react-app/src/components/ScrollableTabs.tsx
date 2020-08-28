@@ -116,27 +116,42 @@ const ScrollableTabs=()=> {
       </Border>
       <Border>
         <Card>
-        <CardContent style={{padding:"10px"}}><CheckCircleIcon color="primary"></CheckCircleIcon>フリップ2<CreateIcon></CreateIcon></CardContent>
+        <CardContent style={{padding:"10px"}}><CheckCircleIcon color="primary"></CheckCircleIcon>フリップ2</CardContent>
         </Card>
       </Border>
       <Border>
         <Card>
-          <CardContent style={{padding:"10px"}}><CheckCircleIcon color="primary"></CheckCircleIcon>フリップ3<CreateIcon></CreateIcon></CardContent>
+          <CardContent style={{padding:"10px"}}><CheckCircleIcon color="primary"></CheckCircleIcon>フリップ3</CardContent>
         </Card>
       </Border>
       <Border>
         <Card>
-          <CardContent style={{padding:"10px"}}><RadioButtonUncheckedIcon color="primary"></RadioButtonUncheckedIcon>フリップ4<CreateIcon></CreateIcon></CardContent>
+          <CardContent style={{padding:"10px"}}><RadioButtonUncheckedIcon color="primary"></RadioButtonUncheckedIcon>フリップ4</CardContent>
         </Card>
         </Border>
       <Border>
         <Card>
-          <CardContent style={{padding:"10px"}}><RadioButtonUncheckedIcon color="primary"></RadioButtonUncheckedIcon>フリップ5<CreateIcon></CreateIcon></CardContent>
+          <CardContent style={{padding:"10px"}}><RadioButtonUncheckedIcon color="primary"></RadioButtonUncheckedIcon>フリップ5</CardContent>
         </Card>
       </Border>
       <Border>
         <Card>
-          <CardContent style={{padding:"10px"}}><RadioButtonUncheckedIcon color="primary"></RadioButtonUncheckedIcon>フリップ6<CreateIcon></CreateIcon></CardContent>
+          <CardContent style={{padding:"10px"}}><RadioButtonUncheckedIcon color="primary"></RadioButtonUncheckedIcon>フリップ6</CardContent>
+        </Card>
+      </Border>
+      <Border>
+        <Card>
+          <CardContent style={{padding:"10px"}}><RadioButtonUncheckedIcon color="primary"></RadioButtonUncheckedIcon>フリップ7</CardContent>
+        </Card>
+      </Border>
+      <Border>
+        <Card>
+          <CardContent style={{padding:"10px"}}><RadioButtonUncheckedIcon color="primary"></RadioButtonUncheckedIcon>フリップ8</CardContent>
+        </Card>
+      </Border>
+      <Border>
+        <Card>
+          <CardContent style={{padding:"10px"}}><RadioButtonUncheckedIcon color="primary"></RadioButtonUncheckedIcon>フリップ9</CardContent>
         </Card>
       </Border>
     </Root>

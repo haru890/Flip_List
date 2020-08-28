@@ -20,10 +20,8 @@ const EditCard = () => {
     <div>
       <form>
         <Card>
-          <TextField placeholder={" オモテ"} style={{width:"100%"}}/>
-          <Divider />
-          <TextField placeholder={" ウラ"} style={{width:"100%"}}/>
-          <Divider />
+          <TextField placeholder={" オモテ"} style={{width:"100%", padding:"10px"}} variant="outlined"/>
+          <TextField placeholder={" ウラ"} style={{width:"100%", padding:"10px"}} variant="outlined"/>
           <FormControl>
             <InputLabel>LINE通知</InputLabel>
             <Select
@@ -68,7 +66,7 @@ const EditCard = () => {
               style={{margin:'5px',
               width:'98%'}}
             >
-              保存
+              更新
             </Button>
           </div>
           <div>
@@ -86,9 +84,10 @@ const EditCard = () => {
         </Card>
       </form>
 
-      <Alert severity="error">This is an error message!</Alert>
+      {/* 登録・更新処理を行った際に出し分けて表示させる */}
+      {/* <Alert severity="error">This is an error message!</Alert>
       <Alert severity="warning">This is a warning message!</Alert>
-      <Alert severity="info">This is an information message!</Alert>
+      <Alert severity="info">This is an information message!</Alert> */}
       <Alert severity="success">This is a success message!</Alert>
     </div>
   );
