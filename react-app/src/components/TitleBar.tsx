@@ -7,7 +7,7 @@ const TitleBar=()=> {
       <AppBar position="static">
         <Toolbar>
           <Typography variant='h6' align='center'>
-            Life Flips
+            Life Flip
           </Typography>
           {/* <Alert severity="warning">
             <AlertTitle>Warning</AlertTitle>

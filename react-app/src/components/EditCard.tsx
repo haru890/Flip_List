@@ -7,9 +7,8 @@ import MenuItem from '@material-ui/core/MenuItem';
 import Select from '@material-ui/core/Select';
 import FormControl from '@material-ui/core/FormControl';
 import InputLabel from '@material-ui/core/InputLabel';
-import SystemUpdateAltIcon from '@material-ui/icons/SystemUpdateAlt';
-import MuiAlert, { AlertProps } from '@material-ui/lab/Alert';
 import Alert from '@material-ui/lab/Alert';
+import SendIcon from '@material-ui/icons/Send';
 
 // Propsを受け取る　親からデータをもらって表示する　FC受け取る型：Props
 const EditCard = () => {
@@ -74,7 +73,7 @@ const EditCard = () => {
               type='submit'
               variant="outlined"
               color="primary"
-              startIcon={<SystemUpdateAltIcon />}
+              startIcon={<SendIcon />}
               style={{margin:'5px',
               width:'98%'}}
             >

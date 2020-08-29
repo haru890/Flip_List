@@ -109,51 +109,33 @@ const ScrollableTabs=()=> {
         Item Seven
       </TabPanel> */}
     <Root>
-      <Border>
-        <Card>
+        <Card variant="outlined">
           <CardContent style={{padding:"10px"}}><CheckCircleIcon color="primary"></CheckCircleIcon>フリップ1<CreateIcon></CreateIcon></CardContent>
         </Card>
-      </Border>
-      <Border>
         <Card>
         <CardContent style={{padding:"10px"}}><CheckCircleIcon color="primary"></CheckCircleIcon>フリップ2</CardContent>
         </Card>
-      </Border>
-      <Border>
         <Card>
           <CardContent style={{padding:"10px"}}><CheckCircleIcon color="primary"></CheckCircleIcon>フリップ3</CardContent>
         </Card>
-      </Border>
-      <Border>
         <Card>
           <CardContent style={{padding:"10px"}}><RadioButtonUncheckedIcon color="primary"></RadioButtonUncheckedIcon>フリップ4</CardContent>
         </Card>
-        </Border>
-      <Border>
         <Card>
           <CardContent style={{padding:"10px"}}><RadioButtonUncheckedIcon color="primary"></RadioButtonUncheckedIcon>フリップ5</CardContent>
         </Card>
-      </Border>
-      <Border>
         <Card>
           <CardContent style={{padding:"10px"}}><RadioButtonUncheckedIcon color="primary"></RadioButtonUncheckedIcon>フリップ6</CardContent>
         </Card>
-      </Border>
-      <Border>
         <Card>
           <CardContent style={{padding:"10px"}}><RadioButtonUncheckedIcon color="primary"></RadioButtonUncheckedIcon>フリップ7</CardContent>
         </Card>
-      </Border>
-      <Border>
         <Card>
           <CardContent style={{padding:"10px"}}><RadioButtonUncheckedIcon color="primary"></RadioButtonUncheckedIcon>フリップ8</CardContent>
         </Card>
-      </Border>
-      <Border>
         <Card>
           <CardContent style={{padding:"10px"}}><RadioButtonUncheckedIcon color="primary"></RadioButtonUncheckedIcon>フリップ9</CardContent>
         </Card>
-      </Border>
     </Root>
     
     </div>
@@ -164,9 +146,10 @@ const Root = styled(Card)({
   backgroundColor: "#e1f5fe",
 });
 
-const Border = styled(Card)({
-  borderCollapse: "collapse",
-  border: "1px solid #cfd8dc",
-});
+// const Border = styled(Card)({
+//   borderCollapse: "collapse",
+//   border: "1px solid #cfd8dc",
+//   padding:"10px"
+// });
 
 export default ScrollableTabs;
