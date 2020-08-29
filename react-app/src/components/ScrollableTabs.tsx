@@ -63,7 +63,7 @@ const ScrollableTabs=()=> {
             )):null
           }
         </Tabs> */}
-        <Tabs
+        {/* <Tabs
           value={value}
           onChange={handleChange}
           indicatorColor="primary"
@@ -81,7 +81,7 @@ const ScrollableTabs=()=> {
           <Tab label="日記" />
           <Tab label="健康" />
           <Tab label="家計簿" />
-        </Tabs>
+        </Tabs> */}
       </AppBar>
       {/* <TabList/>
       <TabPanel value={value} index={0}>

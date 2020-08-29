@@ -19,8 +19,8 @@ const EditCard = () => {
     <div>
       <form>
         <Card>
-          <TextField placeholder={" オモテ"} style={{width:"100%", padding:"10px"}} variant="outlined"/>
-          <TextField placeholder={" ウラ"} style={{width:"100%", padding:"10px"}} variant="outlined"/>
+          <TextField placeholder={" オモテ"} style={{width:"95%", padding:"20px"}} variant="outlined"/>
+          <TextField placeholder={" ウラ"} style={{width:"95%", padding:"20px"}} variant="outlined"/>
           <FormControl>
             {/* <InputLabel>LINE通知</InputLabel> */}
             {/* <Select
