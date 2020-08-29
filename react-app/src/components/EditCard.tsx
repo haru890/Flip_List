@@ -39,7 +39,11 @@ const EditCard = () => {
             <Button
               variant="outlined"
               startIcon={<CancelIcon />}
-              style={{margin:'5px 15px 5px 15px',width:"45%"}}
+              style={{
+                margin:'3px 7px 3px 15px',
+                width:"45%",
+                padding:"17px 25px 17px 25px"
+              }}
             >
               キャンセル
             </Button>
@@ -47,7 +51,7 @@ const EditCard = () => {
               type='submit'
               variant="outlined"
               color="secondary"
-              style={{margin:'5px 15px 5px 15px',width:"45%"}}
+              style={{margin:'5px 10px 5px 15px',width:"45%"}}
             >
               <Tooltip title="Delete">
                 <IconButton aria-label="delete">
@@ -62,8 +66,11 @@ const EditCard = () => {
               variant="outlined"
               color="primary"
               startIcon={<SaveIcon />}
-              style={{margin:'5px',
-              width:'98%'}}
+              style={{
+                margin:'5px',
+                width:'98%',
+                padding:"15px"
+              }}
             >
               更新
             </Button>
@@ -74,8 +81,11 @@ const EditCard = () => {
               variant="outlined"
               color="primary"
               startIcon={<SendIcon />}
-              style={{margin:'5px',
-              width:'98%'}}
+              style={{
+                margin:'5px',
+                width:'98%',
+                padding:"15px"
+              }}
             >
               登録
             </Button>
