@@ -1,5 +1,5 @@
 import React, { ReactNode, FC, useState, ChangeEvent, useEffect } from 'react';
-import {Card, AppBar, Tabs, Typography, Box, Tab, CardContent, styled} from '@material-ui/core';
+import {Card, AppBar, Tabs, Typography, Box, Tab, CardContent, styled, Button} from '@material-ui/core';
 import FlipList from './FlipList';
 import TabList from './TabList';
 import { Tab as _Tab } from '../models/tab';
@@ -109,7 +109,37 @@ const ScrollableTabs=()=> {
         Item Seven
       </TabPanel> */}
     <Root>
-        <Card variant="outlined">
+      <Button variant="outlined" color="primary" style={{width:"97%", padding:"20px", margin: "10px"}}>
+        <CheckCircleIcon color="primary"></CheckCircleIcon>
+        フリップ1
+        <CreateIcon></CreateIcon>
+      </Button>
+      <Button variant="outlined" color="primary" style={{width:"97%", padding:"20px", margin: "10px"}}>
+        <CheckCircleIcon color="primary"></CheckCircleIcon>
+        フリップ2
+        <CreateIcon></CreateIcon>
+      </Button>
+      <Button variant="outlined" color="primary" style={{width:"97%", padding:"20px", margin: "10px"}}>
+        <CheckCircleIcon color="primary"></CheckCircleIcon>
+        フリップ3
+        <CreateIcon></CreateIcon>
+      </Button>
+      <Button variant="outlined" color="primary" style={{width:"97%", padding:"20px", margin: "10px"}}>
+        <CheckCircleIcon color="primary"></CheckCircleIcon>
+        フリップ4
+        <CreateIcon></CreateIcon>
+      </Button>
+      <Button variant="outlined" color="primary" style={{width:"97%", padding:"20px", margin: "10px"}}>
+        <CheckCircleIcon color="primary"></CheckCircleIcon>
+        フリップ5
+        <CreateIcon></CreateIcon>
+      </Button>
+      <Button variant="outlined" color="primary" style={{width:"97%", padding:"20px", margin: "10px"}}>
+        <CheckCircleIcon color="primary"></CheckCircleIcon>
+        フリップ6
+        <CreateIcon></CreateIcon>
+      </Button>
+        {/* <Card variant="outlined">
           <CardContent style={{padding:"10px"}}><CheckCircleIcon color="primary"></CheckCircleIcon>フリップ1<CreateIcon></CreateIcon></CardContent>
         </Card>
         <Card>
@@ -135,7 +165,7 @@ const ScrollableTabs=()=> {
         </Card>
         <Card>
           <CardContent style={{padding:"10px"}}><RadioButtonUncheckedIcon color="primary"></RadioButtonUncheckedIcon>フリップ9</CardContent>
-        </Card>
+        </Card> */}
     </Root>
     
     </div>
@@ -143,7 +173,7 @@ const ScrollableTabs=()=> {
 }
 
 const Root = styled(Card)({
-  backgroundColor: "#e1f5fe",
+  // backgroundColor: "#e1f5fe",
 });
 
 // const Border = styled(Card)({
