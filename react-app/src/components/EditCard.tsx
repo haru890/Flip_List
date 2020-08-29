@@ -22,8 +22,8 @@ const EditCard = () => {
           <TextField placeholder={" オモテ"} style={{width:"100%", padding:"10px"}} variant="outlined"/>
           <TextField placeholder={" ウラ"} style={{width:"100%", padding:"10px"}} variant="outlined"/>
           <FormControl>
-            <InputLabel>LINE通知</InputLabel>
-            <Select
+            {/* <InputLabel>LINE通知</InputLabel> */}
+            {/* <Select
             >
               <MenuItem value="">
                 <em>通知なし</em>
@@ -31,7 +31,19 @@ const EditCard = () => {
               <MenuItem value={10}>07:00〜</MenuItem>
               <MenuItem value={20}>08:00〜</MenuItem>
               <MenuItem value={30}>09:00〜</MenuItem>
-            </Select>
+            </Select> */}
+            <form noValidate>
+              <TextField
+                id="datetime-local"
+                label="LINE 通知"
+                type="datetime-local"
+                defaultValue="2017-05-24T10:30"
+                InputLabelProps={{
+                  shrink: true,
+                }}
+                style={{margin:"10px"}}
+              />
+            </form>
           </FormControl>
           <Divider />
           <textarea cols={80} rows={9} placeholder={" メモ"} style={{margin:"10px"}}></textarea>

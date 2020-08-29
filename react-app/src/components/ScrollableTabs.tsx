@@ -1,11 +1,8 @@
 import React, { ReactNode, FC, useState, ChangeEvent, useEffect } from 'react';
-import {Card, AppBar, Tabs, Typography, Box, Tab, CardContent, styled, Button} from '@material-ui/core';
-import FlipList from './FlipList';
-import TabList from './TabList';
+import {Card, AppBar, Tabs, Typography, Box, Tab, styled, Button} from '@material-ui/core';
 import { Tab as _Tab } from '../models/tab';
 import { fetchTabs } from '../api/tab';
 import CreateIcon from '@material-ui/icons/Create';
-import RadioButtonUncheckedIcon from '@material-ui/icons/RadioButtonUnchecked';
 import CheckCircleIcon from '@material-ui/icons/CheckCircle';
 
 interface Props {
@@ -139,33 +136,6 @@ const ScrollableTabs=()=> {
         フリップ6
         <CreateIcon></CreateIcon>
       </Button>
-        {/* <Card variant="outlined">
-          <CardContent style={{padding:"10px"}}><CheckCircleIcon color="primary"></CheckCircleIcon>フリップ1<CreateIcon></CreateIcon></CardContent>
-        </Card>
-        <Card>
-        <CardContent style={{padding:"10px"}}><CheckCircleIcon color="primary"></CheckCircleIcon>フリップ2</CardContent>
-        </Card>
-        <Card>
-          <CardContent style={{padding:"10px"}}><CheckCircleIcon color="primary"></CheckCircleIcon>フリップ3</CardContent>
-        </Card>
-        <Card>
-          <CardContent style={{padding:"10px"}}><RadioButtonUncheckedIcon color="primary"></RadioButtonUncheckedIcon>フリップ4</CardContent>
-        </Card>
-        <Card>
-          <CardContent style={{padding:"10px"}}><RadioButtonUncheckedIcon color="primary"></RadioButtonUncheckedIcon>フリップ5</CardContent>
-        </Card>
-        <Card>
-          <CardContent style={{padding:"10px"}}><RadioButtonUncheckedIcon color="primary"></RadioButtonUncheckedIcon>フリップ6</CardContent>
-        </Card>
-        <Card>
-          <CardContent style={{padding:"10px"}}><RadioButtonUncheckedIcon color="primary"></RadioButtonUncheckedIcon>フリップ7</CardContent>
-        </Card>
-        <Card>
-          <CardContent style={{padding:"10px"}}><RadioButtonUncheckedIcon color="primary"></RadioButtonUncheckedIcon>フリップ8</CardContent>
-        </Card>
-        <Card>
-          <CardContent style={{padding:"10px"}}><RadioButtonUncheckedIcon color="primary"></RadioButtonUncheckedIcon>フリップ9</CardContent>
-        </Card> */}
     </Root>
     
     </div>
