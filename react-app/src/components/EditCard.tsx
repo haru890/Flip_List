@@ -19,51 +19,56 @@ const EditCard = () => {
     <div>
       <form>
         <Card>
-          <TextField placeholder={" オモテ"} style={{width:"95%", padding:"20px"}} variant="outlined"/>
-          <TextField placeholder={" ウラ"} style={{width:"95%", padding:"20px"}} variant="outlined"/>
-          <FormControl>
-            {/* <InputLabel>LINE通知</InputLabel> */}
-            {/* <Select
-            >
-              <MenuItem value="">
-                <em>通知なし</em>
-              </MenuItem>
-              <MenuItem value={10}>07:00〜</MenuItem>
-              <MenuItem value={20}>08:00〜</MenuItem>
-              <MenuItem value={30}>09:00〜</MenuItem>
-            </Select> */}
+          <TextField 
+            placeholder={" オモテ"} 
+            style={{
+              width:"90%",
+              margin:"30px 0 0 30px"
+            }} 
+            variant="outlined"
+          />
+          <TextField 
+            placeholder={" ウラ"} 
+            style={{
+              width:"90%",
+              margin:"10px 0 0 30px"
+            }} 
+            variant="outlined"
+          />
+          <textarea 
+            cols={80} 
+            rows={9} 
+            placeholder={"メモ"} 
+            style={{
+              width:"86%",
+              padding:"10px",
+              margin:"10px 0 0 30px"
+            }}>
+          </textarea>
+          {/* <FormControl>
             <form noValidate>
               <TextField
                 id="datetime-local"
                 label="LINE 通知"
                 type="datetime-local"
-                defaultValue="2017-05-24T10:30"
+                defaultValue="2020-09-15T10:30"
                 InputLabelProps={{
                   shrink: true,
                 }}
-                style={{margin:"10px"}}
+                style={{margin:"10px 10px 10px 20px"}}
               />
             </form>
-          </FormControl>
-          <Divider />
-          <textarea cols={80} rows={9} placeholder={" メモ"} style={{margin:"10px"}}></textarea>
-          <Divider />
-            <Button
-              variant="outlined"
-              startIcon={<CancelIcon />}
-              style={{
-                margin:'3px 7px 3px 15px',
-                width:"45%",
-                padding:"17px 25px 17px 25px"
-              }}
-            >
-              キャンセル
-            </Button>
+          </FormControl> */}
+          {/* <div>
             <Button
               type='submit'
               variant="outlined"
               color="secondary"
-              style={{margin:'5px 10px 5px 15px',width:"45%"}}
+              style={{
+                margin:'10px 10px 10px 15px',
+                width:"45%",
+                padding:"0"
+              }}
             >
               <Tooltip title="Delete">
                 <IconButton aria-label="delete">
@@ -72,36 +77,69 @@ const EditCard = () => {
               </Tooltip>
               削除
             </Button>
+          </div> */}
           <div>
+          <FormControl>
+            <form noValidate>
+              <TextField
+                id="datetime-local"
+                label="LINE 通知"
+                type="datetime-local"
+                defaultValue="2020-09-15T10:30"
+                InputLabelProps={{
+                  shrink: true,
+                }}
+                style={{
+                  margin:"30px 30px 10px 75px"
+                }}
+              />
+            </form>
+          </FormControl>
             <Button
               type='submit'
               variant="outlined"
               color="primary"
               startIcon={<SaveIcon />}
               style={{
-                margin:'5px',
-                width:'98%',
-                padding:"15px"
+                margin:'30px 5px 30px 25px',
+                width:'30%',
+                padding:"10px 5px"
               }}
             >
               更新
             </Button>
           </div>
-          <div>
+          {/* <div>
+            <FormControl>
+              <form noValidate>
+                <TextField
+                  id="datetime-local"
+                  label="LINE 通知"
+                  type="datetime-local"
+                  defaultValue="2020-09-15T10:30"
+                  InputLabelProps={{
+                    shrink: true,
+                  }}
+                  style={{
+                    margin:"0px 30px 10px 50px"
+                  }}
+                />
+              </form>
+            </FormControl>
             <Button
               type='submit'
               variant="outlined"
               color="primary"
               startIcon={<SendIcon />}
               style={{
-                margin:'5px',
-                width:'98%',
-                padding:"15px"
+                margin:'5px 5px 5px 25px',
+                width:'45%',
+                padding:"10px"
               }}
             >
               登録
             </Button>
-          </div>
+          </div> */}
         </Card>
       </form>
 

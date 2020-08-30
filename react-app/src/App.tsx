@@ -26,7 +26,7 @@ const Main = styled(Grid)({
 });
 
 const Aside = styled(Grid)({
-  backgroundColor: "#fedcba",
+  backgroundColor: "#F0F8FF",
 });
 
 export default App;

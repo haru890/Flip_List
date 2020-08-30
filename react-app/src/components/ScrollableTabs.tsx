@@ -1,9 +1,10 @@
 import React, { ReactNode, FC, useState, ChangeEvent, useEffect } from 'react';
-import {Card, AppBar, Tabs, Typography, Box, Tab, styled, Button} from '@material-ui/core';
+import {Card, AppBar, Tabs, Typography, Box, Tab, styled, Button, Tooltip, IconButton} from '@material-ui/core';
 import { Tab as _Tab } from '../models/tab';
 import { fetchTabs } from '../api/tab';
-import CreateIcon from '@material-ui/icons/Create';
 import CheckCircleIcon from '@material-ui/icons/CheckCircle';
+import RadioButtonUncheckedIcon from '@material-ui/icons/RadioButtonUnchecked';
+import DeleteIcon from '@material-ui/icons/Delete';
 
 interface Props {
   children?: ReactNode;
@@ -106,35 +107,30 @@ const ScrollableTabs=()=> {
         Item Seven
       </TabPanel> */}
     <Root>
-      <Button variant="outlined" color="primary" style={{width:"97%", padding:"20px", margin: "10px"}}>
+      <Button variant="outlined" color="primary" style={{width:"93%", padding:"15px", margin: "30px 0px 0px 20px"}}>
         <CheckCircleIcon color="primary"></CheckCircleIcon>
         フリップ1
-        <CreateIcon></CreateIcon>
+        <DeleteIcon />
       </Button>
-      <Button variant="outlined" color="primary" style={{width:"97%", padding:"20px", margin: "10px"}}>
+      <Button variant="outlined" color="primary" style={{width:"93%", padding:"15px", margin: "30px 0px 0px 20px"}}>
         <CheckCircleIcon color="primary"></CheckCircleIcon>
         フリップ2
-        <CreateIcon></CreateIcon>
+        <DeleteIcon />
       </Button>
-      <Button variant="outlined" color="primary" style={{width:"97%", padding:"20px", margin: "10px"}}>
-        <CheckCircleIcon color="primary"></CheckCircleIcon>
+      <Button variant="outlined" color="primary" style={{width:"93%", padding:"15px", margin: "30px 0px 0px 20px"}}>
+        <RadioButtonUncheckedIcon color="primary"></RadioButtonUncheckedIcon>
         フリップ3
-        <CreateIcon></CreateIcon>
+        <DeleteIcon />
       </Button>
-      <Button variant="outlined" color="primary" style={{width:"97%", padding:"20px", margin: "10px"}}>
-        <CheckCircleIcon color="primary"></CheckCircleIcon>
+      <Button variant="outlined" color="primary" style={{width:"93%", padding:"15px", margin: "30px 0px 0px 20px"}}>
+        <RadioButtonUncheckedIcon color="primary"></RadioButtonUncheckedIcon>
         フリップ4
-        <CreateIcon></CreateIcon>
+        <DeleteIcon />
       </Button>
-      <Button variant="outlined" color="primary" style={{width:"97%", padding:"20px", margin: "10px"}}>
-        <CheckCircleIcon color="primary"></CheckCircleIcon>
+      <Button variant="outlined" color="primary" style={{width:"93%", padding:"15px", margin: "30px 0px 30px 20px"}}>
+        <RadioButtonUncheckedIcon color="primary"></RadioButtonUncheckedIcon>
         フリップ5
-        <CreateIcon></CreateIcon>
-      </Button>
-      <Button variant="outlined" color="primary" style={{width:"97%", padding:"20px", margin: "10px"}}>
-        <CheckCircleIcon color="primary"></CheckCircleIcon>
-        フリップ6
-        <CreateIcon></CreateIcon>
+        <DeleteIcon />
       </Button>
     </Root>
     
