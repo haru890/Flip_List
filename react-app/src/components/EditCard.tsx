@@ -86,28 +86,28 @@ const EditCard = () => {
           <FormControl>
             <form noValidate>
               <TextField
-                id="datetime-local"
-                label="LINE 通知"
-                type="datetime-local"
-                defaultValue="2020-09-15T10:30"
+                id='datetime-local'
+                label='LINE 通知'
+                type='datetime-local'
+                defaultValue='2020-09-15T10:30'
                 InputLabelProps={{
                   shrink: true,
                 }}
                 style={{
-                  margin:"30px 30px 10px 75px"
+                  margin: '30px 30px 10px 75px',
                 }}
               />
             </form>
           </FormControl>
             <Button
               type='submit'
-              variant="outlined"
-              color="primary"
+              variant='outlined'
+              color='primary'
               startIcon={<SaveIcon />}
               style={{
-                margin:'30px 5px 30px 25px',
-                width:'30%',
-                padding:"10px 5px",
+                margin: '30px 5px 30px 25px',
+                width: '30%',
+                padding: '10px 5px',
               }}
             >
               登録
@@ -120,7 +120,7 @@ const EditCard = () => {
       {/* <Alert severity="error">This is an error message!</Alert>
       <Alert severity="warning">This is a warning message!</Alert>
       <Alert severity="info">This is an information message!</Alert> */}
-      <Alert severity="success">This is a success message!</Alert>
+      <Alert severity='success'>This is a success message!</Alert>
     </div>
   );
 };
