@@ -45,6 +45,8 @@ const EditCard = () => {
               margin: '10px 0 0 30px',
               border: '1px solid #C4C4C4',
               borderRadius: '5px',
+              color: '#A2A2A2',
+              fontFamily: 'inherit',
             }}>
           </textarea>
           {/* <FormControl>
