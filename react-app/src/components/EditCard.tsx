@@ -20,32 +20,32 @@ const EditCard = () => {
       <form>
         <Card>
           <TextField 
-            placeholder={" オモテ"} 
+            placeholder={' オモテ'} 
             style={{
-              width:"90%",
-              margin:"30px 0 0 30px"
+              width: '90%',
+              margin: '30px 0 0 30px',
             }} 
-            variant="outlined"
+            variant='outlined'
           />
           <TextField 
-            placeholder={" ウラ"} 
+            placeholder={' ウラ'} 
             style={{
-              width:"90%",
-              margin:"10px 0 0 30px"
+              width: '90%',
+              margin: '10px 0 0 30px',
             }} 
-            variant="outlined"
+            variant='outlined'
           />
           <textarea 
             cols={80} 
             rows={9} 
-            placeholder={"メモ"} 
+            placeholder={'メモ'} 
             style={{
               width: '86%',
               padding: '10px',
               margin: '10px 0 0 30px',
-              border: '1px solid #C4C4C4',
+              border: '1px solid #9FA8DC',
               borderRadius: '5px',
-              color: '#A2A2A2',
+              color: '#9FA8DC',
               fontFamily: 'inherit',
             }}>
           </textarea>
@@ -107,7 +107,7 @@ const EditCard = () => {
               style={{
                 margin:'30px 5px 30px 25px',
                 width:'30%',
-                padding:"10px 5px"
+                padding:"10px 5px",
               }}
             >
               登録
