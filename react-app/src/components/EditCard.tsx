@@ -106,40 +106,9 @@ const EditCard = () => {
                 padding:"10px 5px"
               }}
             >
-              更新
-            </Button>
-          </div>
-          {/* <div>
-            <FormControl>
-              <form noValidate>
-                <TextField
-                  id="datetime-local"
-                  label="LINE 通知"
-                  type="datetime-local"
-                  defaultValue="2020-09-15T10:30"
-                  InputLabelProps={{
-                    shrink: true,
-                  }}
-                  style={{
-                    margin:"0px 30px 10px 50px"
-                  }}
-                />
-              </form>
-            </FormControl>
-            <Button
-              type='submit'
-              variant="outlined"
-              color="primary"
-              startIcon={<SendIcon />}
-              style={{
-                margin:'5px 5px 5px 25px',
-                width:'45%',
-                padding:"10px"
-              }}
-            >
               登録
             </Button>
-          </div> */}
+          </div>
         </Card>
       </form>
 
