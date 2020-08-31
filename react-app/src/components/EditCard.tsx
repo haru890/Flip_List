@@ -40,9 +40,10 @@ const EditCard = () => {
             rows={9} 
             placeholder={"メモ"} 
             style={{
-              width:"86%",
-              padding:"10px",
-              margin:"10px 0 0 30px"
+              width: '86%',
+              padding: '10px',
+              margin: '10px 0 0 30px',
+              border: '1px solid #b0bec5',
             }}>
           </textarea>
           {/* <FormControl>
