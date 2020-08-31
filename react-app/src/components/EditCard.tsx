@@ -43,7 +43,8 @@ const EditCard = () => {
               width: '86%',
               padding: '10px',
               margin: '10px 0 0 30px',
-              border: '1px solid #b0bec5',
+              border: '1px solid #C4C4C4',
+              borderRadius: '5px',
             }}>
           </textarea>
           {/* <FormControl>
