@@ -1,14 +1,8 @@
 import React from 'react';
-import { Card, TextField, Divider, Button, IconButton, Tooltip } from '@material-ui/core';
-import DeleteIcon from '@material-ui/icons/Delete';
+import { Card, TextField, Button } from '@material-ui/core';
 import SaveIcon from '@material-ui/icons/Save';
-import CancelIcon from '@material-ui/icons/Cancel';
-import MenuItem from '@material-ui/core/MenuItem';
-import Select from '@material-ui/core/Select';
 import FormControl from '@material-ui/core/FormControl';
-import InputLabel from '@material-ui/core/InputLabel';
 import Alert from '@material-ui/lab/Alert';
-import SendIcon from '@material-ui/icons/Send';
 
 // Propsを受け取る　親からデータをもらって表示する　FC受け取る型：Props
 const EditCard = () => {
