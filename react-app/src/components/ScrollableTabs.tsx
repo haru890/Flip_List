@@ -5,6 +5,7 @@ import { fetchTabs } from '../api/tab';
 import CheckCircleIcon from '@material-ui/icons/CheckCircle';
 import RadioButtonUncheckedIcon from '@material-ui/icons/RadioButtonUnchecked';
 import DeleteIcon from '@material-ui/icons/Delete';
+import DeleteAlertDialog from './DeleteAlertDialog';
 
 interface Props {
   children?: ReactNode;
@@ -130,7 +131,7 @@ const ScrollableTabs=()=> {
       <Button variant="outlined" color="primary" style={{width:"93%", padding:"15px", margin: "30px 0px 30px 20px"}}>
         <RadioButtonUncheckedIcon color="primary"></RadioButtonUncheckedIcon>
         フリップ5
-        <DeleteIcon />
+        <DeleteAlertDialog />
       </Button>
     </Root>
     
