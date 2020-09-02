@@ -50,7 +50,7 @@ const ScrollableTabs=()=> {
   };
 
   return (
-    <div>
+    <>
       <AppBar position="static" color="default">
         {/* <Tabs
           value={value}
@@ -111,22 +111,22 @@ const ScrollableTabs=()=> {
       <Button variant="outlined" color="primary" style={{width:"93%", padding:"15px", margin: "30px 0px 0px 20px"}}>
         <CheckCircleIcon color="primary"></CheckCircleIcon>
         フリップ1
-        <DeleteIcon />
+        <DeleteAlertDialog />
       </Button>
       <Button variant="outlined" color="primary" style={{width:"93%", padding:"15px", margin: "30px 0px 0px 20px"}}>
         <CheckCircleIcon color="primary"></CheckCircleIcon>
         フリップ2
-        <DeleteIcon />
+        <DeleteAlertDialog />
       </Button>
       <Button variant="outlined" color="primary" style={{width:"93%", padding:"15px", margin: "30px 0px 0px 20px"}}>
         <RadioButtonUncheckedIcon color="primary"></RadioButtonUncheckedIcon>
         フリップ3
-        <DeleteIcon />
+        <DeleteAlertDialog />
       </Button>
       <Button variant="outlined" color="primary" style={{width:"93%", padding:"15px", margin: "30px 0px 0px 20px"}}>
         <RadioButtonUncheckedIcon color="primary"></RadioButtonUncheckedIcon>
         フリップ4
-        <DeleteIcon />
+        <DeleteAlertDialog />
       </Button>
       <Button variant="outlined" color="primary" style={{width:"93%", padding:"15px", margin: "30px 0px 30px 20px"}}>
         <RadioButtonUncheckedIcon color="primary"></RadioButtonUncheckedIcon>
@@ -135,7 +135,7 @@ const ScrollableTabs=()=> {
       </Button>
     </Root>
     
-    </div>
+    </>
   );
 }
 

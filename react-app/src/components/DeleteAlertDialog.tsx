@@ -5,21 +5,21 @@ import DialogActions from '@material-ui/core/DialogActions';
 import DialogTitle from '@material-ui/core/DialogTitle';
 import DeleteIcon from '@material-ui/icons/Delete';
 
-const [open, setOpen] = React.useState(false);
-
-const handleClickOpen = () => {
-  setOpen(true);
-};
-
-const handleClose = () => {
-  setOpen(false);
-};
-
 const DeleteAlertDialog=()=> {
 
+  const [open, setOpen] = React.useState(false);
+
+  const handleClickOpen = () => {
+    setOpen(true);
+  };
+
+  const handleClose = () => {
+    setOpen(false);
+  };
+
   return (
-    <div>
-      <Button variant="outlined" color="primary" onClick={handleClickOpen}>
+    <>
+      <Button color="primary" onClick={handleClickOpen}>
         <DeleteIcon />
       </Button>
       <Dialog
@@ -38,7 +38,7 @@ const DeleteAlertDialog=()=> {
           </Button>
         </DialogActions>
       </Dialog>
-    </div>
+    </>
   );
 
 }
