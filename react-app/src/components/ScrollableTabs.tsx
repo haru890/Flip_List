@@ -1,11 +1,11 @@
 import React, { ReactNode, FC, useState, ChangeEvent, useEffect } from 'react';
-import {Card, AppBar, Tabs, Typography, Box, Tab, styled, Button, Tooltip, IconButton} from '@material-ui/core';
+import {Card, AppBar, Tabs, Typography, Box, styled, Button} from '@material-ui/core';
 import { Tab as _Tab } from '../models/tab';
 import { fetchTabs } from '../api/tab';
 import CheckCircleIcon from '@material-ui/icons/CheckCircle';
 import RadioButtonUncheckedIcon from '@material-ui/icons/RadioButtonUnchecked';
-import DeleteIcon from '@material-ui/icons/Delete';
 import DeleteAlertDialog from './DeleteAlertDialog';
+import CheckBox from './CheckBox';
 
 interface Props {
   children?: ReactNode;
@@ -109,29 +109,19 @@ const ScrollableTabs=()=> {
       </TabPanel> */}
     <Root>
       <Button variant="outlined" color="primary" style={{width:"93%", padding:"15px", margin: "30px 0px 0px 20px"}}>
-        <CheckCircleIcon color="primary"></CheckCircleIcon>
-        フリップ1
-        <DeleteAlertDialog />
+        <CheckBox />フリップ1<DeleteAlertDialog />
       </Button>
       <Button variant="outlined" color="primary" style={{width:"93%", padding:"15px", margin: "30px 0px 0px 20px"}}>
-        <CheckCircleIcon color="primary"></CheckCircleIcon>
-        フリップ2
-        <DeleteAlertDialog />
+        <CheckBox />フリップ2<DeleteAlertDialog />
       </Button>
       <Button variant="outlined" color="primary" style={{width:"93%", padding:"15px", margin: "30px 0px 0px 20px"}}>
-        <RadioButtonUncheckedIcon color="primary"></RadioButtonUncheckedIcon>
-        フリップ3
-        <DeleteAlertDialog />
+        <CheckBox />フリップ3<DeleteAlertDialog />
       </Button>
       <Button variant="outlined" color="primary" style={{width:"93%", padding:"15px", margin: "30px 0px 0px 20px"}}>
-        <RadioButtonUncheckedIcon color="primary"></RadioButtonUncheckedIcon>
-        フリップ4
-        <DeleteAlertDialog />
+        <CheckBox />フリップ4<DeleteAlertDialog />
       </Button>
       <Button variant="outlined" color="primary" style={{width:"93%", padding:"15px", margin: "30px 0px 30px 20px"}}>
-        <RadioButtonUncheckedIcon color="primary"></RadioButtonUncheckedIcon>
-        フリップ5
-        <DeleteAlertDialog />
+        <CheckBox />フリップ5<DeleteAlertDialog />
       </Button>
     </Root>
     
