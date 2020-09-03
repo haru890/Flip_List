@@ -6,6 +6,7 @@ import CheckCircleIcon from '@material-ui/icons/CheckCircle';
 import RadioButtonUncheckedIcon from '@material-ui/icons/RadioButtonUnchecked';
 import DeleteAlertDialog from './DeleteAlertDialog';
 import CheckBox from './CheckBox';
+import TextChangeButton from './TextChangeButton';
 
 interface Props {
   children?: ReactNode;
@@ -120,9 +121,9 @@ const ScrollableTabs=()=> {
       <Button variant="outlined" color="primary" style={{width:"93%", padding:"15px", margin: "30px 0px 0px 20px"}}>
         <CheckBox />フリップ4<DeleteAlertDialog />
       </Button>
-      <Button variant="outlined" color="primary" style={{width:"93%", padding:"15px", margin: "30px 0px 30px 20px"}}>
+      <TextChangeButton variant="outlined" color="primary" style={{width:"93%", padding:"15px", margin: "30px 0px 30px 20px"}}>
         <CheckBox />フリップ5<DeleteAlertDialog />
-      </Button>
+      </TextChangeButton>
     </Root>
     
     </>
