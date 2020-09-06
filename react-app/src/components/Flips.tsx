@@ -4,6 +4,7 @@ import { Tab as _Tab } from '../models/tab';
 import { fetchTabs } from '../api/tab';
 import DeleteAlertDialog from './DeleteAlertDialog';
 import CheckBox from './CheckBox';
+import Test from './Test';
 
 interface Props {
   children?: ReactNode;
@@ -47,43 +48,26 @@ const Flips=()=> {
     setValue(newValue);
   };
 
-
-
-  let borderColor = '#9FA8DC';
-
-  const borderColorChange = () => {
-    borderColor = '#FF0000';
-  };
-
-
+  const [selected, setSelected] = useState<boolean>(false);
 
   return (
     <>
     <Root>
-      <Button variant="outlined" color="primary" style={{width:"93%", padding:"15px", margin: "30px 0px 0px 20px"}}>
+      <Button variant="outlined" color="primary" 
+        onClick={() => { setSelected(!selected) }}
+        style={{width:"93%", padding:"15px", margin: "30px 0px 0px 20px", border: "solid 1px", borderColor: `${selected ? "#FE8C56" : "#9FA8DC"}`,}}>
         <CheckBox />フリップ1<DeleteAlertDialog />
       </Button>
-      <Button variant="outlined" color="primary" style={{width:"93%", padding:"15px", margin: "30px 0px 0px 20px"}}>
+      <Button variant="outlined" color="primary" 
+        onClick={() => { setSelected(!selected) }}
+        style={{width:"93%", padding:"15px", margin: "30px 0px 0px 20px", border: "solid 1px", borderColor: `${selected ? "#FE8C56" : "#9FA8DC"}`,}}>
         <CheckBox />フリップ2<DeleteAlertDialog />
       </Button>
-      <Button variant="outlined" color="primary" style={{width:"93%", padding:"15px", margin: "30px 0px 0px 20px"}}>
+      <Button variant="outlined" color="primary" 
+        onClick={() => { setSelected(!selected) }}
+        style={{width:"93%", padding:"15px", margin: "30px 0px 30px 20px", border: "solid 1px", borderColor: `${selected ? "#FE8C56" : "#9FA8DC"}`,}}>
         <CheckBox />フリップ3<DeleteAlertDialog />
       </Button>
-
-
-
-      <Button onClick={borderColorChange} variant="outlined" color="primary" style={{width:"93%", padding:"15px", margin: "30px 0px 0px 20px", borderColor: borderColor,}}>
-        <CheckBox />フリップ4<DeleteAlertDialog />
-      </Button>
-
-      <Select>
-        <Button variant="outlined" color="primary" style={{width:"93%", padding:"15px", margin: "30px 0px 30px 20px",}}>
-          <CheckBox />フリップ5<DeleteAlertDialog />
-        </Button>
-      </Select>
-
-
-
     </Root>
     </>
   );
