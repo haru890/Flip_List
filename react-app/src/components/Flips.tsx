@@ -47,6 +47,16 @@ const Flips=()=> {
     setValue(newValue);
   };
 
+
+
+  let borderColor = '#9FA8DC';
+
+  const borderColorChange = () => {
+    borderColor = '#FF0000';
+  };
+
+
+
   return (
     <>
     <Root>
@@ -59,18 +69,22 @@ const Flips=()=> {
       <Button variant="outlined" color="primary" style={{width:"93%", padding:"15px", margin: "30px 0px 0px 20px"}}>
         <CheckBox />フリップ3<DeleteAlertDialog />
       </Button>
-      <Button variant="outlined" color="primary" style={{width:"93%", padding:"15px", margin: "30px 0px 0px 20px"}}>
+
+
+
+      <Button onClick={borderColorChange} variant="outlined" color="primary" style={{width:"93%", padding:"15px", margin: "30px 0px 0px 20px", borderColor: borderColor,}}>
         <CheckBox />フリップ4<DeleteAlertDialog />
       </Button>
+
       <Select>
-      <Select>
-      <Button variant="outlined" color="primary" style={{width:"93%", padding:"15px", margin: "30px 0px 30px 20px"}}>
-        <CheckBox />フリップ5<DeleteAlertDialog />
-      </Button>
+        <Button variant="outlined" color="primary" style={{width:"93%", padding:"15px", margin: "30px 0px 30px 20px",}}>
+          <CheckBox />フリップ5<DeleteAlertDialog />
+        </Button>
       </Select>
-      </Select>
+
+
+
     </Root>
-    <Select><a>test</a></Select>
     </>
   );
 }
@@ -79,15 +93,14 @@ const Root = styled(Card)({
   backgroundColor: 'white',
 });
 
+
+
 const Select = styled(Button)({
-  '&:hover': {
-    color: '#FF0000',
-    borderColor: '#FF0000',
-  },
   '&:active': {
-    color: '#FF0000',
     borderColor: '#FF0000',
   },
 });
+
+
 
 export default Flips;
