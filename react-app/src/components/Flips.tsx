@@ -4,7 +4,6 @@ import { Tab as _Tab } from '../models/tab';
 import { fetchTabs } from '../api/tab';
 import DeleteAlertDialog from './DeleteAlertDialog';
 import CheckBox from './CheckBox';
-import Test from './Test';
 
 interface Props {
   children?: ReactNode;
