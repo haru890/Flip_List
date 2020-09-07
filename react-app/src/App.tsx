@@ -1,7 +1,6 @@
 import React from 'react';
 import Grid from '@material-ui/core/Grid';
 import styled from '@emotion/styled';
-import TitleBar from './components/ScrollableTabs';
 import EditCard from './components/EditCard';
 import Flips from './components/Flips';
 import ScrollableTabs from './components/ScrollableTabs';
@@ -23,7 +22,7 @@ function App() {
 }
 
 const Main = styled(Grid)({
-  backgroundColor: "#F0F8FF	",
+  backgroundColor: "#F0F8FF",
 });
 
 const Aside = styled(Grid)({

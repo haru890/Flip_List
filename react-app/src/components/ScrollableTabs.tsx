@@ -2,8 +2,6 @@ import React, { ReactNode, FC, useState, ChangeEvent, useEffect } from 'react';
 import {Card, AppBar, Tabs, Typography, Box, Tab, styled, Button, Toolbar} from '@material-ui/core';
 import { Tab as _Tab } from '../models/tab';
 import { fetchTabs } from '../api/tab';
-import CreateIcon from '@material-ui/icons/Create';
-import CheckCircleIcon from '@material-ui/icons/CheckCircle';
 
 interface Props {
   children?: ReactNode;
@@ -89,11 +87,5 @@ const ScrollableTabs=()=> {
 const Root = styled(Card)({
   // backgroundColor: "#e1f5fe",
 });
-
-// const Border = styled(Card)({
-//   borderCollapse: "collapse",
-//   border: "1px solid #cfd8dc",
-//   padding:"10px"
-// });
 
 export default ScrollableTabs;
