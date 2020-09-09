@@ -1,5 +1,5 @@
 import React, { ReactNode, FC, useState, ChangeEvent, useEffect } from 'react';
-import {Card, Typography, Box, styled, Button} from '@material-ui/core';
+import {Card, Typography, Box, styled, Button, TextField, FormControl} from '@material-ui/core';
 import { Tab as _Tab } from '../models/tab';
 import { fetchTabs } from '../api/tab';
 import DeleteAlertDialog from './DeleteAlertDialog';
@@ -122,44 +122,65 @@ const Flips=()=> {
     </Root>
 
 
-    <div className={classes.root}>
       <Accordion defaultExpanded>
         <AccordionSummary
-          expandIcon={<ExpandMoreIcon />}
           aria-controls="panel1c-content"
           id="panel1c-header"
         >
-          <div className={classes.column}>
-            <Typography className={classes.heading}>Location</Typography>
-          </div>
-          <div className={classes.column}>
-            <Typography className={classes.secondaryHeading}>Select trip destination</Typography>
-          </div>
+          <Button variant="outlined" color="primary" 
+            onClick={() => { setSelected(!selected) }}
+            style={{width:"95%", padding:"15px", margin: "30px 0px 0px 10px", border: `${selected ? "solid 2px" : "solid 1px"}`, borderColor: `${selected ? "#FE8C56" : "#9FA8DC"}`,}}>
+            <CheckBox />フリップ1<DeleteAlertDialog />
+            <br /><ExpandMoreIcon />
+          </Button>
         </AccordionSummary>
         <AccordionDetails className={classes.details}>
-          <div className={classes.column} />
-          <div className={classes.column}>
-            <Chip label="Barbados" onDelete={() => {}} />
-          </div>
-          <div className={clsx(classes.column, classes.helper)}>
-            <Typography variant="caption">
-              Select your destination of choice
-              <br />
-              <a href="#secondary-heading-and-columns" className={classes.link}>
-                Learn more
-              </a>
-            </Typography>
-          </div>
+            <textarea 
+              cols={80} 
+              rows={9} 
+              placeholder={'メモ'} 
+              style={{
+                width: '92%',
+                padding: '10px',
+                margin: '0 0 0 10px',
+                border: '1px solid #9FA8DC',
+                borderRadius: '5px',
+                color: '#9FA8DC',
+                fontFamily: 'inherit',
+              }}>
+            </textarea>
         </AccordionDetails>
-        <Divider />
         <AccordionActions>
-          <Button size="small">Cancel</Button>
-          <Button size="small" color="primary">
+          <FormControl>
+            <form noValidate>
+              <TextField
+                id='datetime-local'
+                label='LINE 通知'
+                type='datetime-local'
+                defaultValue='2020-09-15T10:30'
+                InputLabelProps={{
+                  shrink: true,
+                }}
+                style={{
+                  margin: '0px 80px 10px 0px',
+                }}
+              />
+            </form>
+            </FormControl>
+          <Button                 
+            style={{
+              margin: '0px 80px 10px 0px',
+            }} 
+            size="small">Cancel</Button>
+          <Button
+            style={{
+              margin: '0px 80px 10px 0px',
+            }}
+            size="small" color="primary">
             Save
           </Button>
         </AccordionActions>
       </Accordion>
-    </div>
   
 
     </>
