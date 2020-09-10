@@ -1,8 +1,8 @@
-import React, { useState, useEffect } from 'react';
-import { Card, CardContent, Typography } from '@material-ui/core';
-import { fetchFlips } from '../api/flip';
-import { Flip } from '../models/flip';
-import FlipCard from './FlipCard';
+import { Card, CardContent, Typography } from "@material-ui/core";
+import React, { useEffect, useState } from "react";
+import { fetchFlips } from "../api/flip";
+import { Flip } from "../models/flip";
+import FlipCard from "./FlipCard";
 
 const FlipList = () => {
   const [flips, setFlips] = useState<Flip[] | undefined>(undefined);
@@ -18,18 +18,22 @@ const FlipList = () => {
 
   useEffect(() => {
     const data = fetchFlipsReq();
-    data.then(flips => { setFlips(flips); });
+    data.then((flips) => {
+      setFlips(flips);
+    });
   }, []);
 
   return (
     <Card>
       <CardContent>
-        {flips ? flips.map((flip) => (
-          <>
-            <Typography variant="h6">{flip}</Typography>
-            <FlipCard flip={flip}/>
-          </>
-        )):null}
+        {flips
+          ? flips.map((flip) => (
+              <>
+                <Typography variant="h6">{flip}</Typography>
+                <FlipCard flip={flip} />
+              </>
+            ))
+          : null}
       </CardContent>
     </Card>
   );
