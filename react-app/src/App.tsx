@@ -1,21 +1,21 @@
-import React from 'react';
-import Grid from '@material-ui/core/Grid';
-import styled from '@emotion/styled';
-import EditCard from './components/EditCard';
-import Flips from './components/Flips';
-import ScrollableTabs from './components/ScrollableTabs';
+import styled from "@emotion/styled";
+import Grid from "@material-ui/core/Grid";
+import React from "react";
+import ActionsInAccordionSummary from "./components/ActionsInAccordionSummary";
+import EditCard from "./components/EditCard";
+import ScrollableTabs from "./components/ScrollableTabs";
 
 function App() {
   return (
     <Grid container>
       <Grid item xs={12} md={12}>
-        <ScrollableTabs/>
+        <ScrollableTabs />
       </Grid>
       <Main item xs={12} md={7}>
-        <Flips/>
+        <ActionsInAccordionSummary />
       </Main>
       <Aside item xs={12} md={5}>
-        <EditCard/>
+        <EditCard />
       </Aside>
     </Grid>
   );

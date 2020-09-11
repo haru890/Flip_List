@@ -1,7 +1,16 @@
-import React, { ReactNode, FC, useState, ChangeEvent, useEffect } from 'react';
-import {Card, AppBar, Tabs, Typography, Box, Tab, styled, Button, Toolbar} from '@material-ui/core';
-import { Tab as _Tab } from '../models/tab';
-import { fetchTabs } from '../api/tab';
+import {
+  AppBar,
+  Box,
+  Card,
+  styled,
+  Tab,
+  Tabs,
+  Typography,
+} from "@material-ui/core";
+import React, { ChangeEvent, FC, ReactNode, useEffect, useState } from "react";
+import { fetchTabs } from "../api/tab";
+import { Tab as _Tab } from "../models/tab";
+import AddButtonIcon from "./AddButtonIcon";
 
 interface Props {
   children?: ReactNode;
@@ -9,7 +18,7 @@ interface Props {
   value: number;
 }
 
-const TabPanel:FC<Props>=({children, index, value})=> {
+const TabPanel: FC<Props> = ({ children, index, value }) => {
   return (
     <div hidden={value !== index}>
       {value === index && (
@@ -19,10 +28,9 @@ const TabPanel:FC<Props>=({children, index, value})=> {
       )}
     </div>
   );
-}
+};
 
-const ScrollableTabs=()=> {
-
+const ScrollableTabs = () => {
   const [tabs, setTabs] = useState<_Tab[] | undefined>(undefined);
 
   const fetchTabsReq = async () => {
@@ -36,7 +44,9 @@ const ScrollableTabs=()=> {
 
   useEffect(() => {
     const data = fetchTabsReq();
-    data.then(tabs => { setTabs(tabs); });
+    data.then((tabs) => {
+      setTabs(tabs);
+    });
   }, []);
 
   const [value, setValue] = useState<number>(0);
@@ -48,11 +58,7 @@ const ScrollableTabs=()=> {
   return (
     <div>
       <AppBar position="static" color="default">
-        {/* <Toolbar>
-          <Typography variant="h6">
-            Flip Lists
-          </Typography>
-        </Toolbar> */}
+        <AddButtonIcon />
         <Tabs
           value={value}
           onChange={handleChange}
@@ -63,10 +69,8 @@ const ScrollableTabs=()=> {
           aria-label="scrollable auto tabs example"
           style={{
             margin: "10px",
-            fontSize:"large"
-            
+            fontSize: "large",
           }}
-
         >
           <Tab label="8/27 木" />
           <Tab label="8/28 金" />
@@ -79,10 +83,10 @@ const ScrollableTabs=()=> {
           <Tab label="家計簿" />
           <Tab label="契約更新" />
         </Tabs>
-      </AppBar>  
+      </AppBar>
     </div>
   );
-}
+};
 
 const Root = styled(Card)({
   // backgroundColor: "#e1f5fe",
