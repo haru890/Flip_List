@@ -10,7 +10,6 @@ import {
 import React, { ChangeEvent, FC, ReactNode, useEffect, useState } from "react";
 import { fetchTabs } from "../api/tab";
 import { Tab as _Tab } from "../models/tab";
-import AddButtonIcon from "./AddButtonIcon";
 
 interface Props {
   children?: ReactNode;
@@ -58,7 +57,6 @@ const ScrollableTabs = () => {
   return (
     <div>
       <AppBar position="static" color="default">
-        <AddButtonIcon />
         <Tabs
           value={value}
           onChange={handleChange}
