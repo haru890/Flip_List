@@ -10,6 +10,8 @@ import {
 import React, { ChangeEvent, FC, ReactNode, useEffect, useState } from "react";
 import { fetchTabs } from "../api/tab";
 import { Tab as _Tab } from "../models/tab";
+import AddButtonIcon from "./AddButtonIcon";
+import DeleteButtonIcon from "./DeleteButtonIcon";
 
 interface Props {
   children?: ReactNode;
@@ -55,7 +57,7 @@ const ScrollableTabs = () => {
   };
 
   return (
-    <div>
+    <>
       <AppBar position="static" color="default">
         <Tabs
           value={value}
@@ -70,6 +72,8 @@ const ScrollableTabs = () => {
             fontSize: "large",
           }}
         >
+          <AddButtonIcon />
+          <DeleteButtonIcon />
           <Tab label="8/27 木" />
           <Tab label="8/28 金" />
           <Tab label="メモ" />
@@ -82,7 +86,7 @@ const ScrollableTabs = () => {
           <Tab label="契約更新" />
         </Tabs>
       </AppBar>
-    </div>
+    </>
   );
 };
 

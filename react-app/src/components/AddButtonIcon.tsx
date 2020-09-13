@@ -1,3 +1,4 @@
+import { IconButton } from "@material-ui/core";
 import Fab from "@material-ui/core/Fab";
 import { createStyles, makeStyles, Theme } from "@material-ui/core/styles";
 import Tooltip from "@material-ui/core/Tooltip";
@@ -22,9 +23,11 @@ export default function SimpleTooltips() {
 
   return (
     <Tooltip title="Add" aria-label="add">
-      <Fab color="primary" className={classes.fab}>
-        <AddIcon />
-      </Fab>
+      <IconButton size="small" aria-label="add">
+        <Fab color="primary" className={classes.fab}>
+          <AddIcon />
+        </Fab>
+      </IconButton>
     </Tooltip>
   );
 }

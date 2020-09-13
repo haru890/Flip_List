@@ -4,7 +4,6 @@ import React from "react";
 import ActionsInAccordionSummary from "./components/ActionsInAccordionSummary";
 import AddButtonIcon from "./components/AddButtonIcon";
 import DateAndTimePickers from "./components/DateTimePickers";
-import DeleteButtonIcon from "./components/DeleteButtonIcon";
 import MultilineTextFields from "./components/MultilineTextFields";
 import ScrollableTabs from "./components/ScrollableTabs";
 
@@ -12,12 +11,11 @@ function App() {
   return (
     <Grid container>
       <Grid item xs={12} md={12}>
-        <AddButtonIcon />
-        <DeleteButtonIcon />
         <ScrollableTabs />
       </Grid>
       <Main item xs={12} md={7}>
         <ActionsInAccordionSummary />
+        <AddButtonIcon />
       </Main>
       <Aside item xs={12} md={5}>
         <MultilineTextFields />
