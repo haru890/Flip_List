@@ -1,27 +1,30 @@
 import Fab from "@material-ui/core/Fab";
 import { createStyles, makeStyles, Theme } from "@material-ui/core/styles";
+import Tooltip from "@material-ui/core/Tooltip";
 import AddIcon from "@material-ui/icons/Add";
 import React from "react";
 
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
-    root: {
-      "& > *": {
-        margin: theme.spacing(1),
-      },
+    fab: {
+      margin: theme.spacing(2),
     },
-    extendedIcon: {
-      marginRight: theme.spacing(1),
+    absolute: {
+      position: "absolute",
+      bottom: theme.spacing(2),
+      right: theme.spacing(3),
     },
   })
 );
 
-export default function AddButtonIcon() {
+export default function SimpleTooltips() {
   const classes = useStyles();
 
   return (
-    <Fab size="small" color="primary" aria-label="add">
-      <AddIcon />
-    </Fab>
+    <Tooltip title="Add" aria-label="add">
+      <Fab color="primary" className={classes.fab}>
+        <AddIcon />
+      </Fab>
+    </Tooltip>
   );
 }

@@ -12,8 +12,8 @@ function App() {
   return (
     <Grid container>
       <Grid item xs={12} md={12}>
-        <DeleteButtonIcon />
         <AddButtonIcon />
+        <DeleteButtonIcon />
         <ScrollableTabs />
       </Grid>
       <Main item xs={12} md={7}>

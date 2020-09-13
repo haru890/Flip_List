@@ -1,3 +1,4 @@
+import { Fab } from "@material-ui/core";
 import IconButton from "@material-ui/core/IconButton";
 import { createStyles, makeStyles, Theme } from "@material-ui/core/styles";
 import Tooltip from "@material-ui/core/Tooltip";
@@ -23,7 +24,9 @@ export default function DeleteButtonIcon() {
   return (
     <Tooltip title="Delete">
       <IconButton size="small" aria-label="delete">
-        <DeleteIcon />
+        <Fab color="primary" className={classes.fab}>
+          <DeleteIcon />
+        </Fab>
       </IconButton>
     </Tooltip>
   );
