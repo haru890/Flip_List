@@ -27,7 +27,7 @@ export default function MultilineTextFields() {
         <TextField
           id="outlined-multiline-static"
           multiline
-          rows={30}
+          rows={25}
           defaultValue="Default Value"
           variant="outlined"
           style={{
