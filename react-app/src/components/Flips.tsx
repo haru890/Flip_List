@@ -16,8 +16,8 @@ import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 import React, { ChangeEvent, FC, ReactNode, useEffect, useState } from "react";
 import { fetchTabs } from "../api/tab";
 import { Tab as _Tab } from "../models/tab";
-import CheckBox from "./CheckBox";
 import DeleteAlertDialog from "./DeleteAlertDialog";
+import SecondaryCheckBox from "./SecondaryCheckBox";
 
 interface Props {
   children?: ReactNode;
@@ -83,7 +83,7 @@ const Flips: FC = () => {
             borderColor: `${selected ? "#FE8C56" : "#9FA8DC"}`,
           }}
         >
-          <CheckBox />
+          <SecondaryCheckBox />
           フリップ1
           <DeleteAlertDialog />
         </Button>
@@ -101,7 +101,7 @@ const Flips: FC = () => {
             borderColor: `${selected ? "#FE8C56" : "#9FA8DC"}`,
           }}
         >
-          <CheckBox />
+          <SecondaryCheckBox />
           フリップ2
           <DeleteAlertDialog />
         </Button>
@@ -119,7 +119,7 @@ const Flips: FC = () => {
             borderColor: `${selected ? "#FE8C56" : "#9FA8DC"}`,
           }}
         >
-          <CheckBox />
+          <SecondaryCheckBox />
           フリップ3
           <DeleteAlertDialog />
         </Button>
@@ -136,7 +136,7 @@ const Flips: FC = () => {
               margin: "30px 0px 0px 10px",
             }}
           >
-            <CheckBox />
+            <SecondaryCheckBox />
             フリップ1
             <DeleteAlertDialog />
             <br />

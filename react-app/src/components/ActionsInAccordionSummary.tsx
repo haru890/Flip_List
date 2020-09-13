@@ -1,12 +1,12 @@
 import Accordion from "@material-ui/core/Accordion";
 import AccordionDetails from "@material-ui/core/AccordionDetails";
 import AccordionSummary from "@material-ui/core/AccordionSummary";
-import Checkbox from "@material-ui/core/Checkbox";
 import FormControlLabel from "@material-ui/core/FormControlLabel";
 import { makeStyles } from "@material-ui/core/styles";
 import Typography from "@material-ui/core/Typography";
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 import React from "react";
+import SecondaryCheckBox from "./SecondaryCheckBox";
 
 const useStyles = makeStyles({
   root: {
@@ -30,7 +30,7 @@ export default function ActionsInAccordionSummary() {
             aria-label="Acknowledge"
             onClick={(event) => event.stopPropagation()}
             onFocus={(event) => event.stopPropagation()}
-            control={<Checkbox />}
+            control={<SecondaryCheckBox />}
             label="I acknowledge that I should stop the click event propagation"
           />
         </AccordionSummary>
@@ -52,7 +52,7 @@ export default function ActionsInAccordionSummary() {
             aria-label="Acknowledge"
             onClick={(event) => event.stopPropagation()}
             onFocus={(event) => event.stopPropagation()}
-            control={<Checkbox />}
+            control={<SecondaryCheckBox />}
             label="I acknowledge that I should stop the focus event propagation"
           />
         </AccordionSummary>
@@ -74,7 +74,7 @@ export default function ActionsInAccordionSummary() {
             aria-label="Acknowledge"
             onClick={(event) => event.stopPropagation()}
             onFocus={(event) => event.stopPropagation()}
-            control={<Checkbox />}
+            control={<SecondaryCheckBox />}
             label="I acknowledge that I should provide an aria-label on each action that I add"
           />
         </AccordionSummary>
