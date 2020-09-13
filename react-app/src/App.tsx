@@ -2,6 +2,7 @@ import styled from "@emotion/styled";
 import Grid from "@material-ui/core/Grid";
 import React from "react";
 import ActionsInAccordionSummary from "./components/ActionsInAccordionSummary";
+import DateAndTimePickers from "./components/DateTimePickers";
 import MultilineTextFields from "./components/MultilineTextFields";
 import ScrollableTabs from "./components/ScrollableTabs";
 
@@ -16,6 +17,7 @@ function App() {
       </Main>
       <Aside item xs={12} md={5}>
         <MultilineTextFields />
+        <DateAndTimePickers />
       </Aside>
     </Grid>
   );
