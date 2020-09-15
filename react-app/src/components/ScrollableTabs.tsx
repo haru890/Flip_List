@@ -1,7 +1,7 @@
 import {
   AppBar,
   Box,
-  Card,
+  Button,
   styled,
   Tab,
   Tabs,
@@ -72,8 +72,10 @@ const ScrollableTabs = () => {
             fontSize: "large",
           }}
         >
-          <AddButtonIcon />
-          <DeleteButtonIcon />
+          <Root>
+            <AddButtonIcon />
+            <DeleteButtonIcon />
+          </Root>
           <Tab label="8/27 木" />
           <Tab label="8/28 金" />
           <Tab label="メモ" />
@@ -90,8 +92,10 @@ const ScrollableTabs = () => {
   );
 };
 
-const Root = styled(Card)({
-  // backgroundColor: "#e1f5fe",
+const Root = styled(Button)({
+  backgroundColor: "#e1f5",
+  size: "small",
+  iconSizeSmall: "small",
 });
 
 export default ScrollableTabs;
