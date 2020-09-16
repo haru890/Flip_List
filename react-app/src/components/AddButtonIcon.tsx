@@ -8,12 +8,7 @@ import React from "react";
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
     fab: {
-      margin: theme.spacing(2),
-    },
-    absolute: {
-      position: "absolute",
-      bottom: theme.spacing(2),
-      right: theme.spacing(3),
+      margin: theme.spacing(0),
     },
   })
 );
@@ -23,8 +18,8 @@ export default function SimpleTooltips() {
 
   return (
     <Tooltip title="Add" aria-label="add">
-      <IconButton size="small" aria-label="add">
-        <Fab color="primary" className={classes.fab}>
+      <IconButton aria-label="add">
+        <Fab size="small" color="primary" className={classes.fab}>
           <AddIcon />
         </Fab>
       </IconButton>

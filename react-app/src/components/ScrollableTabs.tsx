@@ -1,12 +1,4 @@
-import {
-  AppBar,
-  Box,
-  Button,
-  styled,
-  Tab,
-  Tabs,
-  Typography,
-} from "@material-ui/core";
+import { AppBar, Box, Tab, Tabs, Typography } from "@material-ui/core";
 import React, { ChangeEvent, FC, ReactNode, useEffect, useState } from "react";
 import { fetchTabs } from "../api/tab";
 import { Tab as _Tab } from "../models/tab";
@@ -72,10 +64,8 @@ const ScrollableTabs = () => {
             fontSize: "large",
           }}
         >
-          <Root>
-            <AddButtonIcon />
-            <DeleteButtonIcon />
-          </Root>
+          <AddButtonIcon />
+          <DeleteButtonIcon />
           <Tab label="8/27 木" />
           <Tab label="8/28 金" />
           <Tab label="メモ" />
@@ -91,11 +81,5 @@ const ScrollableTabs = () => {
     </>
   );
 };
-
-const Root = styled(Button)({
-  backgroundColor: "#e1f5",
-  size: "small",
-  iconSizeSmall: "small",
-});
 
 export default ScrollableTabs;
