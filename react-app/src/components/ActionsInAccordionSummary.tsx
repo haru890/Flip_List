@@ -6,6 +6,7 @@ import { makeStyles } from "@material-ui/core/styles";
 import Typography from "@material-ui/core/Typography";
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 import React from "react";
+import FilledMultilineStatic from "./FilledMultilineStatic";
 import SecondaryCheckBox from "./SecondaryCheckBox";
 
 const useStyles = makeStyles({
@@ -79,11 +80,7 @@ export default function ActionsInAccordionSummary() {
           />
         </AccordionSummary>
         <AccordionDetails>
-          <Typography color="textSecondary">
-            If you forget to put an aria-label on the nested action, the label
-            of the action will also be included in the label of the parent
-            button that controls the accordion expansion.
-          </Typography>
+          <FilledMultilineStatic></FilledMultilineStatic>
         </AccordionDetails>
       </Accordion>
     </div>
